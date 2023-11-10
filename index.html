@@ -72,8 +72,9 @@
 
         var new_rows = []
         for(var i=0; i<rows.length; i++){
-          if(rows[i][0] && rows[i][1] && rows[i][2]){
-            new_rows.push([rows[i][0],rows[i][1],_scale(rows[i][2])]);
+          var split_row = rows[i].split(',');
+          if(split_row[0] && split_row[1] && split_row[2]){
+            new_rows.push([split_row[0],split_row[1],_scale(Number(split_row[2]))]);
           }
         }
 
