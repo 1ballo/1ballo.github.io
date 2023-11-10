@@ -1,7 +1,29 @@
 <html>
   <head>
+
+
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
+
+      async function fetchAndParseCSVToArray(url) {
+          try {
+              // Fetch the CSV data
+              const response = await fetch(url);
+              const data = await response.text();
+
+              // Parse the CSV data
+              const lines = data.split('\n');
+
+              // Remove empty lines (optional)
+              return lines.filter(line => line.trim());
+
+          } catch (error) {
+              console.error('Error fetching or parsing CSV:', error);
+              return []; // Return an empty array in case of an error
+          }
+      }
+
+
       google.charts.load('current', {'packages':['sankey']});
       google.charts.setOnLoadCallback(drawChart);
 
@@ -54,6 +76,8 @@
         var amount_hedgey = 0.1; // asked lindsey
         var amount_questbook = 0.1; // asked madhavan
         var amount_hypercerts = 0.1; // asked carl, confirmed "Very small <50 eth"
+
+        var rows = fetchAndParseCSVToArray('https://owocki.github.io/data.csv');
 
         data.addRows([
           // column 1
