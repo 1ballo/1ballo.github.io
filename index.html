@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['sankey']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+      var colors = ['#a6cee3', '#b2df8a', '#fb9a99', '#fdbf6f',
+                    '#cab2d6', '#ffff99', '#1f78b4', '#33a02c'];
+
+      var options = {
+        height: 400,
+        width: 600,
+        sankey: {
+          node: {
+            colors: colors
+          },
+          link: {
+            colorMode: 'gradient',
+            colors: colors
+          }
+        }
+      };
+
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'From');
+        data.addColumn('string', 'To');
+        data.addColumn('number', 'Weight');
+        data.addRows([
+          [ 'L2 Sequencer Fees', 'Optimism', 20 ],
+          [ 'Donations', 'Gitcoin', 2 ],
+          [ 'Donations', 'ClrFund', 0.25 ],
+          [ 'Donations', 'Giveth', 0.25 ],
+          [ 'Donations', 'DAO Drops', 0.25 ],
+          [ 'Donations', 'Protocol Guild', 8 ],
+          [ 'Optimism', 'RetroPGF', 20 ],
+          [ 'Gitcoin', 'QF', 20 ],
+          [ 'ClrFund', 'QF', 0.25 ],
+          [ 'Giveth', 'QF', 0.25 ],
+          [ 'DAO Drops', 'RetroPGF', 0.25 ],
+          [ 'Protocol Guild', 'Self Curating Registry', 8 ],
+        ]);
+
+
+        // Instantiates and draws our chart, passing in some options.
+        var chart = new google.visualization.Sankey(document.getElementById('sankey_basic'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <h1> Public Goods Funding Flowing in Ethereum: 2023</h1>
+    <h2>By Donation Source, dApp, and Mechanism</h2>
+    <div id="sankey_basic" style="width: 900px; height: 300px;"></div>
+  </body>
+</html>
