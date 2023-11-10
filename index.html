@@ -34,9 +34,11 @@
         var amount_giveth = 0.5;
         var amount_daodrops = 0.25;
         var amount_protocolguild = 8;
+        var amount_ef = 60;
 
         data.addRows([
           // column 1
+          [ 'EF Treasury', 'EF', amount_ef ],
           [ 'L2 Sequencer Fees', 'Optimism', amount_op ],
           [ 'Donations', 'Gitcoin', amount_gitcoin ],
           [ 'Donations', 'ClrFund', amount_clrfund ],
@@ -44,6 +46,7 @@
           [ 'Donations', 'DAO Drops', amount_daodrops ],
           [ 'Donations', 'Protocol Guild', amount_protocolguild ],
           // column 2
+          [ 'EF', 'Direct Grants', amount_ef ],
           [ 'Optimism', 'RetroPGF', amount_op ],
           [ 'Gitcoin', 'QF', amount_gitcoin ],
           [ 'Gitcoin', 'Direct Grants', 0.001 ],
@@ -63,11 +66,11 @@
   <body>
     <h1> Public Goods Funding Flowing in Ethereum: 2023</h1>
     <h2>By Donation Source, dApp, and Mechanism</h2>
-    <div id="sankey_basic" style="width: 900px; height: 300px;"></div>
     <div>
       
         The data presented here is a best guess good faith representation of the ecosystem.  If you have issues, please track in github or 
         <a href="https://github.com/owocki/owocki.github.io"> fork me</a>.
     </div>
+    <div id="sankey_basic" style="width: 900px; height: 300px;"></div>
   </body>
 </html>
