@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+    Array.prototype.random = function () {
+      return this[Math.floor((Math.random()*this.length))];
+    }
+
+      google.charts.load('current', {'packages':['sankey']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+      var colors = ['#a6cee3', '#b2df8a', '#fb9a99', '#fdbf6f',
+                    '#cab2d6', '#ffff99', '#1f78b4', '#33a02c'];
+
+      var options = {
+        height: 800, //window.innerHeight * 1.1,
+        width: window.innerWidth- 50,
+        sankey: {
+          node: {
+            colors: colors
+          },
+          link: {
+            colorMode: 'gradient',
+            colors: colors
+          }
+        }
+      };
+
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        var _scale = function(x){
+          return x;
+        }
+
+        if(urlParams.get('scaledown')){
+          var _scale = function(x){
+            return Math.pow(x, 1/3);
+            //return (Math.sqrt(x));
+            //return Math.sqrt(Math.sqrt(x));
+          }
+        } else {
+
+        }
+
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'From');
+        data.addColumn('string', 'To');
+        data.addColumn('number', 'Weight');
+
+        var amount_gitcoin = 7; // asked umar
+        var amount_op = 40; // asked jonas
+        var amount_clrfund = 0.25; // asked auryn
+        var amount_giveth = 0.5; // asked griff
+        var amount_daodrops = 0.25;  // confirmed https://blog.dorg.tech/p/dao-drops-round-1-results-are-in?r=1j
+        var amount_protocolguild = 8; // asked trent
+        var amount_ef = 60; // asked EF
+        var amount_hedgey = 0.1; // asked lindsey
+        var amount_questbook = 0.1; // asked madhavan
+        var amount_hypercerts = 0.1; // asked carl, confirmed "Very small <50 eth"
+
+        var project_rows = []
+        for(var i=0;i<30;i++){
+          for(var j=0;j<[1,2,3].random();j++){
+            var from = ['Direct Grants', 'QF', 'RetroPGF'].random();
+            var to = 'Project ' + i;
+            project_rows.push([ from, to, _scale(Math.random() * 5) ]);
+          }
+        }
+        project_rows.push(['Self Curating Registry', 'Protocol GuilD', 1])
+
+        data.addRows([
+          // column 1
+          [ 'EF Treasury', 'EF', _scale(amount_ef) ],
+          [ 'L2 Sequencer Fees', 'Optimism', _scale(amount_op) ],
+          [ 'L2 Sequencer Fees', 'Gitcoin', _scale(0.1) ],
+          [ 'Donations', 'Gitcoin', _scale(amount_gitcoin) ],
+          [ 'Donations', 'ClrFund', _scale(amount_clrfund) ],
+          [ 'Donations', 'Giveth', _scale(amount_giveth) ],
+          [ 'Donations', 'DAO Drops', _scale(amount_daodrops) ],
+          [ 'Donations', 'Protocol Guild', _scale(amount_protocolguild) ],
+          [ 'Donations', 'Questbook', _scale(amount_questbook) ],
+          [ 'HyperCert', 'HyperCerts', _scale(amount_hypercerts) ],
+          [ 'Donations', 'Hedgey', _scale(amount_hedgey) ],
+          // column 2
+          [ 'EF', 'Direct Grants', _scale(amount_ef) ],
+          [ 'Hedgey', 'Direct Grants', _scale(amount_hedgey) ],
+          [ 'Questbook', 'Direct Grants', _scale(amount_questbook) ],
+          [ 'Optimism', 'RetroPGF', _scale(amount_op) ],
+          [ 'Gitcoin', 'QF', _scale(amount_gitcoin) ],
+          [ 'Gitcoin', 'Direct Grants', _scale(0.001) ],
+          [ 'ClrFund', 'QF', _scale(amount_clrfund) ],
+          [ 'Giveth', 'QF', _scale(amount_giveth) ],
+          [ 'DAO Drops', 'RetroPGF', _scale(amount_daodrops) ],
+          [ 'Protocol Guild', 'Self Curating Registry', _scale(amount_protocolguild) ],
+          [ 'HyperCerts', 'HyperCertS', _scale(amount_hypercerts) ],
+        ].concat(project_rows ));
+
+
+        // Instantiates and draws our chart, passing in some options.
+        var chart = new google.visualization.Sankey(document.getElementById('sankey_basic'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <h1> Public Goods Funding Flowing in Ethereum: 2023</h1>
+    <div>
+        <text style="color:red;">WARNING: THIS IS AN ALPHA VERSION OF THIS SITE AND THE DATA IS NOT 100% CONFIRMED YET.<BR></text>
+        mode: <a href="https://owocki.github.io/">Regular (but Whale Dominated) 🐳</a> | <a href="https://owocki.github.io/?scaledown=1">Sqrt Amounts (Whales Scaled Down) 🐟</a>
+    </div>
+    <div>
+      <h2 style="width:25%; display: inline-block;">Funding Source</h2>
+      <h2 style="width:25%; display: inline-block; text-align: center;">dApp/Org</h2>
+      <h2 style="width:25%; display: inline-block; text-align: center;">Mechanism</h2>
+      <h2 style="width:22%; display: inline-block; text-align: right;">Project</h2>
+    </div>
+    <div id="sankey_basic" style="height: 800px; width: 300px;"></div>
+    <div>
+        Inspired by convos at Zuzalu + <a href="https://twitter.com/owocki/status/1721890700206465273?s=46&t=X0oQ26a3ezptVAZLp1QFaw">this tweet thread</a>. The data presented here is a best guess good faith representation of the ecosystem.  If you have issues, please track in github or 
+        <a href="https://github.com/owocki/owocki.github.io"> fork me</a>.
+    </div>
+  </body>
+</html>
