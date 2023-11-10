@@ -4,6 +4,7 @@
 
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
+    var start = async function() {
 
       async function fetchAndParseCSVToArray(url) {
           try {
@@ -22,6 +23,8 @@
               return []; // Return an empty array in case of an error
           }
       }
+
+      var rows = await fetchAndParseCSVToArray('https://owocki.github.io/data.csv');
 
 
       google.charts.load('current', {'packages':['sankey']});
@@ -45,6 +48,7 @@
         }
       };
 
+
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
         var _scale = function(x){
@@ -66,51 +70,21 @@
         data.addColumn('string', 'To');
         data.addColumn('number', 'Weight');
 
-        var amount_gitcoin = 7; // asked umar
-        var amount_op = 40; // asked jonas
-        var amount_clrfund = 0.25; // asked auryn
-        var amount_giveth = 0.5; // asked griff
-        var amount_daodrops = 0.25;  // confirmed https://blog.dorg.tech/p/dao-drops-round-1-results-are-in?r=1j
-        var amount_protocolguild = 8; // asked trent
-        var amount_ef = 60; // asked EF
-        var amount_hedgey = 0.1; // asked lindsey
-        var amount_questbook = 0.1; // asked madhavan
-        var amount_hypercerts = 0.1; // asked carl, confirmed "Very small <50 eth"
+        var new_rows = []
+        for(var i=0; i<rows.length; i++){
+          if(rows[i][0] && rows[i][1] && rows[i][2]){
+            new_rows.push([rows[i][0],rows[i][1],_scale(rows[i][2])]);
+          }
+        }
 
-        var rows = fetchAndParseCSVToArray('https://owocki.github.io/data.csv');
-
-        data.addRows([
-          // column 1
-          [ 'EF Treasury', 'EF', _scale(amount_ef) ],
-          [ 'L2 Sequencer Fees', 'Optimism', _scale(amount_op) ],
-          [ 'L2 Sequencer Fees', 'Gitcoin', _scale(0.1) ],
-          [ 'Donations', 'Gitcoin', _scale(amount_gitcoin) ],
-          [ 'Donations', 'ClrFund', _scale(amount_clrfund) ],
-          [ 'Donations', 'Giveth', _scale(amount_giveth) ],
-          [ 'Donations', 'DAO Drops', _scale(amount_daodrops) ],
-          [ 'Donations', 'Protocol Guild', _scale(amount_protocolguild) ],
-          [ 'Donations', 'Questbook', _scale(amount_questbook) ],
-          [ 'HyperCert', 'HyperCerts', _scale(amount_hypercerts) ],
-          [ 'Donations', 'Hedgey', _scale(amount_hedgey) ],
-          // column 2
-          [ 'EF', 'Direct Grants', _scale(amount_ef) ],
-          [ 'Hedgey', 'Direct Grants', _scale(amount_hedgey) ],
-          [ 'Questbook', 'Direct Grants', _scale(amount_questbook) ],
-          [ 'Optimism', 'RetroPGF', _scale(amount_op) ],
-          [ 'Gitcoin', 'QF', _scale(amount_gitcoin) ],
-          [ 'Gitcoin', 'Direct Grants', _scale(0.001) ],
-          [ 'ClrFund', 'QF', _scale(amount_clrfund) ],
-          [ 'Giveth', 'QF', _scale(amount_giveth) ],
-          [ 'DAO Drops', 'RetroPGF', _scale(amount_daodrops) ],
-          [ 'Protocol Guild', 'Self Curating Registry', _scale(amount_protocolguild) ],
-          [ 'HyperCerts', 'HyperCertS', _scale(amount_hypercerts) ],
-        ]);
-
+        data.addRows(new_rows);
 
         // Instantiates and draws our chart, passing in some options.
         var chart = new google.visualization.Sankey(document.getElementById('sankey_basic'));
         chart.draw(data, options);
       }
+    };;
+    start();
     </script>
   </head>
   <body>

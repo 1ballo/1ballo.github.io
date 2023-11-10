@@ -1,1 +1,23 @@
-foo,bar
+EF Treasury,EF,60
+L2 Sequencer Fees,Optimism,40
+L2 Sequencer Fees,Gitcoin,0.1
+Donations,Gitcoin,7
+Donations,ClrFund,0.25
+Donations,Giveth,0.5
+Donations,DAO Drops,0.25
+Donations,Protocol Guild,8
+Donations,Questbook,0.1
+HyperCert,HyperCerts,0.1
+Donations,Hedgey,0.1
+EF,Direct Grants,60
+Hedgey,Direct Grants,0.1
+Questbook,Direct Grants,0.1
+Optimism,RetroPGF,40
+Gitcoin,QF,7
+Gitcoin,Direct Grants,0.001
+ClrFund,QF,0.25
+Giveth,QF,0.5
+DAO Drops,RetroPGF,0.25
+Protocol Guild,Self Curating Registry,8
+HyperCerts,HyperCertS,0.1
+
