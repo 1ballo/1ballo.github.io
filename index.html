@@ -71,7 +71,7 @@
         data.addColumn('number', 'Weight');
 
         var new_rows = []
-        for(var i=0; i<rows.length; i++){
+        for(var i=1; i<rows.length; i++){
           var split_row = rows[i].split(',');
           if(split_row[0] && split_row[1] && split_row[2]){
             new_rows.push([split_row[0],split_row[1],_scale(Number(split_row[2]))]);

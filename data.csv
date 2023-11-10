@@ -1,23 +1,24 @@
-EF Treasury,EF,60
-L2 Sequencer Fees,Optimism,40
-L2 Sequencer Fees,Gitcoin,0.1
-Donations,Gitcoin,7
-Donations,ClrFund,0.25
-Donations,Giveth,0.5
-Donations,DAO Drops,0.25
-Donations,Protocol Guild,8
-Donations,Questbook,0.1
-HyperCert,HyperCerts,0.1
-Donations,Hedgey,0.1
-EF,Direct Grants,60
-Hedgey,Direct Grants,0.1
-Questbook,Direct Grants,0.1
-Optimism,RetroPGF,40
-Gitcoin,QF,7
-Gitcoin,Direct Grants,0.001
-ClrFund,QF,0.25
-Giveth,QF,0.5
-DAO Drops,RetroPGF,0.25
-Protocol Guild,Self Curating Registry,8
-HyperCerts,HyperCertS,0.1
+from,to,amount,comment
+EF Treasury,EF,60,column_1
+L2 Sequencer Fees,Optimism,40,column_1
+L2 Sequencer Fees,Gitcoin,0.1,column_1
+Donations,Gitcoin,7,column_1
+Donations,ClrFund,0.25,column_1
+Donations,Giveth,0.5,column_1
+Donations,DAO Drops,0.25,column_1
+Donations,Protocol Guild,8,column_1
+Donations,Questbook,0.1,column_1
+HyperCert,HyperCerts,0.1,column_1
+Donations,Hedgey,0.1,column_1
+EF,Direct Grants,60,column_2
+Hedgey,Direct Grants,0.1,column_2
+Questbook,Direct Grants,0.1,column_2
+Optimism,RetroPGF,40,column_2
+Gitcoin,QF,7,column_2
+Gitcoin,Direct Grants,0.001,column_2
+ClrFund,QF,0.25,column_2
+Giveth,QF,0.5,column_2
+DAO Drops,RetroPGF,0.25,column_2
+Protocol Guild,Self Curating Registry,8,column_2
+HyperCerts,HyperCertS,0.1,column_2
 
