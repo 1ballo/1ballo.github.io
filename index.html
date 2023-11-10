@@ -10,7 +10,7 @@
                     '#cab2d6', '#ffff99', '#1f78b4', '#33a02c'];
 
       var options = {
-        height: 1000, //window.innerHeight * 1.1,
+        height: 500, //window.innerHeight * 1.1,
         width: window.innerWidth- 50,
         sankey: {
           node: {
@@ -31,8 +31,9 @@
 
         if(urlParams.get('scaledown')){
           var _scale = function(x){
-            return (Math.sqrt(x));
-            return Math.sqrt(Math.sqrt(x));
+            return Math.pow(x, 1/3);
+            //return (Math.sqrt(x));
+            //return Math.sqrt(Math.sqrt(x));
           }
         } else {
 
@@ -90,12 +91,16 @@
   </head>
   <body>
     <h1> Public Goods Funding Flowing in Ethereum: 2023</h1>
-    <h2>By Funding Source, dApp, and Mechanism</h2>
     <div>
         <text style="color:red;">WARNING: THIS IS AN ALPHA VERSION OF THIS SITE AND THE DATA IS NOT 100% CONFIRMED YET.<BR></text>
-        mode: <a href="https://owocki.github.io/">Regular / Whale Dominated 🐳</a> | <a href="https://owocki.github.io/?scaledown=1">Sqrt Amounts / Whales Scaled Down 🐟</a>
+        mode: <a href="https://owocki.github.io/">Regular (but Whale Dominated) 🐳</a> | <a href="https://owocki.github.io/?scaledown=1">Sqrt Amounts (Whales Scaled Down) 🐟</a>
     </div>
-    <div id="sankey_basic" style="height: 1000px; width: 300px;"></div>
+    <div>
+      <h2 style="width:33%; display: inline-block;">Funding Source</h2>
+      <h2 style="width:33%; display: inline-block; text-align: center;">dApp/Org</h2>
+      <h2 style="width:33%; display: inline-block; text-align: right;">Mechanism</h2>
+    </div>
+    <div id="sankey_basic" style="height: 500px; width: 300px;"></div>
     <div>
         Inspired by convos at Zuzalu + <a href="https://twitter.com/owocki/status/1721890700206465273?s=46&t=X0oQ26a3ezptVAZLp1QFaw">this tweet thread</a>. The data presented here is a best guess good faith representation of the ecosystem.  If you have issues, please track in github or 
         <a href="https://github.com/owocki/owocki.github.io"> fork me</a>.
