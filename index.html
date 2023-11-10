@@ -74,7 +74,11 @@
         for(var i=1; i<rows.length; i++){
           var split_row = rows[i].split(',');
           if(split_row[0] && split_row[1] && split_row[2]){
-            new_rows.push([split_row[0],split_row[1],_scale(Number(split_row[2]))]);
+            var include = split_row[3] != 'column_3';
+            if (include){
+              console.log(split_row);
+              new_rows.push([split_row[0],split_row[1],_scale(Number(split_row[2]))]);
+            }
           }
         }
 

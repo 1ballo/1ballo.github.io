@@ -1,46 +1,47 @@
+// much of this pulled from https://docs.google.com/spreadsheets/d/1IOkWvVtDnuSIBXAtEDgN01aE_ivH8gNapW7eHnW3fNc/edit#gid=1872251957
 from,to,amount,comment
-EF Treasury,EF,60,column_1
-L2 Sequencer Fees,Optimism,40,column_1
-L2 Sequencer Fees,Gitcoin,0.1,column_1
-L1 Sequencer Fees,Octant,1,column_1
-Donations,Gitcoin,7,column_1
-Donations,ClrFund,0.25,column_1
-Donations,Giveth,0.5,column_1
-Donations,DAO Drops,0.25,column_1
-Donations,Protocol Guild,8,column_1
-Donations,Questbook,0.1,column_1
-HyperCert,HyperCerts,0.1,column_1
-Donations,Hedgey,0.1,column_1
-EF,Direct Grants,60,column_2
-Hedgey,Direct Grants,0.1,column_2
-Questbook,Direct Grants,0.1,column_2
-Optimism,RetroPGF,40,column_2
-Gitcoin,QF,7,column_2
-Gitcoin,Direct Grants,0.001,column_2
-ClrFund,QF,0.25,column_2
-Giveth,QF,0.5,column_2
-DAO Drops,RetroPGF,0.25,column_2
-Protocol Guild,Self Curating Registry,8,column_2
-HyperCerts,HyperCertS,0.1,column_2
-Octant,Protocol Guild,125038.4,colunn_3
-Octant,Rotki,67832.8,colunn_3
-Octant,Hypercerts,55440,colunn_3
-Octant,The Tor Project,52386.4,colunn_3
-Octant,GIveth,219661.4,colunn_3
-Octant,Drips,26517.4,colunn_3
-Octant,OnionDAO,20799.2,colunn_3
-Octant,GItcoin,528354.2,colunn_3
-Octant,Ethereum Cat Herders,16081.8,colunn_3
-Octant,DAO Drops,60886,colunn_3
-Octant,Kernel,83822,colunn_3
-Octant,EthStaker,97645.2,colunn_3
-Octant,BrightID,13044.2,colunn_3
-Octant,Clr.fund,12923.6,colunn_3
-Octant,MetaGame,12719.8,colunn_3
-Octant,PublicHAUS,12700.4,colunn_3
-Octant,Glo Dollar,11531,colunn_3
-Octant,Pairwise,12104.6,colunn_3
-Octant,Praise,11933,colunn_3
+EF Treasury,EF,60000000,column_1
+L2 Sequencer Fees,Optimism,40000000,column_1
+L2 Sequencer Fees,Gitcoin,100000,column_1
+L1 Sequencer Fees,Octant,1000000,column_1
+Donations,Gitcoin,7000000,column_1
+Donations,ClrFund,2500000,column_1
+Donations,Giveth,500000,column_1
+Donations,DAO Drops,250000,column_1
+Donations,Protocol Guild,10000000,column_1
+Donations,Questbook,100000,column_1
+HyperCert,HyperCerts,100000,column_1
+Donations,Hedgey,100000,column_1
+EF,Direct Grants,60000000,column_2
+Hedgey,Direct Grants,100000,column_2
+Questbook,Direct Grants,100000,column_2
+Optimism,RetroPGF,40000000,column_2
+Gitcoin,QF,6000000,column_2
+Gitcoin,Direct Grants,1000,column_2
+ClrFund,QF,250000,column_2
+Giveth,QF,500000,column_2
+DAO Drops,RetroPGF,250000,column_2
+Protocol Guild,Self Curating Registry,8000000,column_2
+HyperCerts,HyperCertS,100000,column_2
+Octant,Protocol Guild,125038.4,column_3
+Octant,Rotki,67832.8,column_3
+Octant,Hypercerts,55440,column_3
+Octant,The Tor Project,52386.4,column_3
+Octant,GIveth,219661.4,column_3
+Octant,Drips,26517.4,column_3
+Octant,OnionDAO,20799.2,column_3
+Octant,GItcoin,528354.2,column_3
+Octant,Ethereum Cat Herders,16081.8,column_3
+Octant,DAO Drops,60886,column_3
+Octant,Kernel,83822,column_3
+Octant,EthStaker,97645.2,column_3
+Octant,BrightID,13044.2,column_3
+Octant,Clr.fund,12923.6,column_3
+Octant,MetaGame,12719.8,column_3
+Octant,PublicHAUS,12700.4,column_3
+Octant,Glo Dollar,11531,column_3
+Octant,Pairwise,12104.6,column_3
+Octant,Praise,11933,column_3
 QF,Lenster,211049,column_3
 QF,JediSwap,175112,column_3
 QF,DefiLlama,173425,column_3
