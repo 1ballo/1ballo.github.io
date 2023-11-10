@@ -10,7 +10,7 @@
                     '#cab2d6', '#ffff99', '#1f78b4', '#33a02c'];
 
       var options = {
-        height: window.innerHeight - 200,
+        height: 1000, //window.innerHeight * 1.1,
         width: window.innerWidth- 50,
         sankey: {
           node: {
@@ -22,6 +22,21 @@
           }
         }
       };
+
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        var _scale = function(x){
+          return x;
+        }
+
+        if(urlParams.get('scaledown')){
+          var _scale = function(x){
+            return (Math.sqrt(x));
+            return Math.sqrt(Math.sqrt(x));
+          }
+        } else {
+
+        }
 
         var data = new google.visualization.DataTable();
         data.addColumn('string', 'From');
@@ -35,28 +50,35 @@
         var amount_daodrops = 0.25;  // confirmed https://blog.dorg.tech/p/dao-drops-round-1-results-are-in?r=1j
         var amount_protocolguild = 8; // asked trent
         var amount_ef = 60; // asked EF
-        var amount_hedgey = 0; // asked lindsey
-        var amount_questbook = 0; // asked madhavan
+        var amount_hedgey = 0.1; // asked lindsey
+        var amount_questbook = 0.1; // asked madhavan
         var amount_hypercerts = 0.1; // asked carl, confirmed "Very small <50 eth"
 
         data.addRows([
           // column 1
-          [ 'EF Treasury', 'EF', amount_ef ],
-          [ 'L2 Sequencer Fees', 'Optimism', amount_op ],
-          [ 'Donations', 'Gitcoin', amount_gitcoin ],
-          [ 'Donations', 'ClrFund', amount_clrfund ],
-          [ 'Donations', 'Giveth', amount_giveth ],
-          [ 'Donations', 'DAO Drops', amount_daodrops ],
-          [ 'Donations', 'Protocol Guild', amount_protocolguild ],
+          [ 'EF Treasury', 'EF', _scale(amount_ef) ],
+          [ 'L2 Sequencer Fees', 'Optimism', _scale(amount_op) ],
+          [ 'L2 Sequencer Fees', 'Gitcoin', _scale(0.1) ],
+          [ 'Donations', 'Gitcoin', _scale(amount_gitcoin) ],
+          [ 'Donations', 'ClrFund', _scale(amount_clrfund) ],
+          [ 'Donations', 'Giveth', _scale(amount_giveth) ],
+          [ 'Donations', 'DAO Drops', _scale(amount_daodrops) ],
+          [ 'Donations', 'Protocol Guild', _scale(amount_protocolguild) ],
+          [ 'Donations', 'Questbook', _scale(amount_questbook) ],
+          [ 'HyperCert', 'HyperCerts', _scale(amount_hypercerts) ],
+          [ 'Donations', 'Hedgey', _scale(amount_hedgey) ],
           // column 2
-          [ 'EF', 'Direct Grants', amount_ef ],
-          [ 'Optimism', 'RetroPGF', amount_op ],
-          [ 'Gitcoin', 'QF', amount_gitcoin ],
-          [ 'Gitcoin', 'Direct Grants', 0.001 ],
-          [ 'ClrFund', 'QF', amount_clrfund ],
-          [ 'Giveth', 'QF', amount_giveth ],
-          [ 'DAO Drops', 'RetroPGF', amount_daodrops ],
-          [ 'Protocol Guild', 'Self Curating Registry', amount_protocolguild ],
+          [ 'EF', 'Direct Grants', _scale(amount_ef) ],
+          [ 'Hedgey', 'Direct Grants', _scale(amount_hedgey) ],
+          [ 'Questbook', 'Direct Grants', _scale(amount_questbook) ],
+          [ 'Optimism', 'RetroPGF', _scale(amount_op) ],
+          [ 'Gitcoin', 'QF', _scale(amount_gitcoin) ],
+          [ 'Gitcoin', 'Direct Grants', _scale(0.001) ],
+          [ 'ClrFund', 'QF', _scale(amount_clrfund) ],
+          [ 'Giveth', 'QF', _scale(amount_giveth) ],
+          [ 'DAO Drops', 'RetroPGF', _scale(amount_daodrops) ],
+          [ 'Protocol Guild', 'Self Curating Registry', _scale(amount_protocolguild) ],
+          [ 'HyperCerts', 'HyperCertS', _scale(amount_hypercerts) ],
         ]);
 
 
@@ -68,12 +90,15 @@
   </head>
   <body>
     <h1> Public Goods Funding Flowing in Ethereum: 2023</h1>
-    <h2>By Donation Source, dApp, and Mechanism</h2>
+    <h2>By Funding Source, dApp, and Mechanism</h2>
     <div>
         <text style="color:red;">WARNING: THIS IS AN ALPHA VERSION OF THIS SITE AND THE DATA IS NOT 100% CONFIRMED YET.<BR></text>
+        mode: <a href="https://owocki.github.io/">Regular / Whale Dominated 🐳</a> | <a href="https://owocki.github.io/?scaledown=1">Sqrt Amounts / Whales Scaled Down 🐟</a>
+    </div>
+    <div id="sankey_basic" style="height: 1000px; width: 300px;"></div>
+    <div>
         Inspired by convos at Zuzalu + <a href="https://twitter.com/owocki/status/1721890700206465273?s=46&t=X0oQ26a3ezptVAZLp1QFaw">this tweet thread</a>. The data presented here is a best guess good faith representation of the ecosystem.  If you have issues, please track in github or 
         <a href="https://github.com/owocki/owocki.github.io"> fork me</a>.
     </div>
-    <div id="sankey_basic" style="width: 900px; height: 300px;"></div>
   </body>
 </html>
