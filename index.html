@@ -10,8 +10,8 @@
                     '#cab2d6', '#ffff99', '#1f78b4', '#33a02c'];
 
       var options = {
-        height: 600,
-        width: 600,
+        height: window.innerHeight - 200,
+        width: window.innerWidth- 50,
         sankey: {
           node: {
             colors: colors
@@ -37,7 +37,7 @@
         var amount_ef = 60; // asked EF
         var amount_hedgey = 0; // asked lindsey
         var amount_questbook = 0; // asked madhavan
-        var amount_hypercerts = 0; // asked carl
+        var amount_hypercerts = 0.1; // asked carl, confirmed "Very small <50 eth"
 
         data.addRows([
           // column 1
@@ -70,8 +70,8 @@
     <h1> Public Goods Funding Flowing in Ethereum: 2023</h1>
     <h2>By Donation Source, dApp, and Mechanism</h2>
     <div>
-      
-        Inspired by convos at Zuzalu + <a href="https://twitter.com/owocki/status/1721890700206465273?s=46&t=X0oQ26a3ezptVAZLp1QFaw">this tweet thread</a> The data presented here is a best guess good faith representation of the ecosystem.  If you have issues, please track in github or 
+        <text style="color:red;">WARNING: THIS IS AN ALPHA VERSION OF THIS SITE AND THE DATA IS NOT 100% CONFIRMED YET.<BR></text>
+        Inspired by convos at Zuzalu + <a href="https://twitter.com/owocki/status/1721890700206465273?s=46&t=X0oQ26a3ezptVAZLp1QFaw">this tweet thread</a>. The data presented here is a best guess good faith representation of the ecosystem.  If you have issues, please track in github or 
         <a href="https://github.com/owocki/owocki.github.io"> fork me</a>.
     </div>
     <div id="sankey_basic" style="width: 900px; height: 300px;"></div>
