@@ -61,14 +61,14 @@
         var amount_hypercerts = 0.1; // asked carl, confirmed "Very small <50 eth"
 
         var project_rows = []
-        for(var i=0;i<30;i++){
+        for(var i=0;i<20;i++){
           for(var j=0;j<[1,2,3].random();j++){
             var from = ['Direct Grants', 'QF', 'RetroPGF'].random();
             var to = 'Project ' + i;
             project_rows.push([ from, to, _scale(Math.random() * 5) ]);
           }
         }
-        project_rows.push(['Self Curating Registry', 'Protocol GuilD', 1])
+        project_rows.push(['Self Curating Registry', 'Protocol GuilD', _scale(amount_protocolguild)])
 
         data.addRows([
           // column 1
