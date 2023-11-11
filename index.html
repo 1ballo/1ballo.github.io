@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Aqueducts for Public Goods Funding in Ethereum: 2023</title>
+    <title>Funding Flows in Ethereum: 2023</title>
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
@@ -17,7 +17,14 @@
       }
       var urlParams = function(){
         const queryString = window.location.search;
-        return  new URLSearchParams(queryString);
+        var values = new URLSearchParams(queryString);
+        if(!values.get('showprojects') || values.get('showprojects') == 'null'){
+          values.set('showprojects', 0);
+        }
+        if(!values.get('scaledown') || values.get('scaledown') == 'null'){
+          values.set('scaledown', 0);
+        }
+        return values;
       }
               
     var start = async function() {
@@ -35,6 +42,9 @@
               return []; // Return an empty array in case of an error
           }
       }
+      var showprojects = urlParams().get('showprojects') == 1;
+      var scaledown = urlParams().get('scaledown')  == 1;
+
       var rows = await fetchAndParseCSVToArray('https://owocki.github.io/data.csv');
       google.charts.load('current', {'packages':['sankey']});
       google.charts.setOnLoadCallback(drawChart);
@@ -42,7 +52,7 @@
       var colors = ['#a6cee3', '#b2df8a', '#fb9a99', '#fdbf6f',
                     '#cab2d6', '#ffff99', '#1f78b4', '#33a02c'];
       var height = window.innerHeight * 0.7;
-      if(urlParams().get('showprojects')){
+      if(showprojects){
         height = window.innerHeight * 1.4;
       }
       var width = window.innerWidth- 50;
@@ -64,7 +74,7 @@
         var _scale = function(x){
           return x;
         }
-        if(urlParams().get('scaledown')){
+        if(scaledown){
           var _scale = function(x){
             return Math.pow(x, 1/3);
             //return (Math.sqrt(x));
@@ -74,7 +84,7 @@
         } else {
           document.getElementById("scaledown_on").style.fontWeight='bold';
         }
-        if(urlParams().get('showprojects')){
+        if(showprojects){
             document.getElementById("title").style.display='none';
             document.getElementById("title_projects").style.display='block';
             document.getElementById("showprojects_off").style.fontWeight='bold';
@@ -89,7 +99,7 @@
         for(var i=1; i<rows.length; i++){
           var split_row = rows[i].split(',');
           if(split_row[0] && split_row[1] && split_row[2]){
-            var include = split_row[3] != 'column_3' || urlParams().get('showprojects');
+            var include = split_row[3] != 'column_3' || showprojects;
             console.log(split_row[4]);
             if(split_row[4] && split_row[4] == 'Include?  This is mostly for DAO ecosystems not ETH public goods'){
                 include = false;
@@ -111,7 +121,8 @@
   <body style="font-family: PT Serif,sans-serif; background: rgb(255,255,255); background: linear-gradient(-4deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 90%, rgba(147,243,231,1) 100%);">
     <img src="img/logo.png" style="max-width: 150px; vertical-align:middle; ">
     <h1 style="font-size: 2em;"> 
-    Public Goods Funding Aqueducts in Ethereum: 2023</h1>
+    Funding Flows in Ethereum: 2023</h1>
+    <h2>Public Goods Funding from source to destination</h2>
     <div>
         mode: 
         <br>-<a id=scaledown_on href="#" onclick="document.location=baseUrl() + '?scaledown=&showprojects='+urlParams().get('showprojects');">Regular (but Whale Dominated) 🐳</a> 
@@ -144,8 +155,8 @@
         <br>1. my time at Zuconnect,
         <br>2. the philosophy of <a href="https://medium.com/@owocki/practical-pluralism-322ab0a984c5">Practical Pluralism</a>,
         <br>3. 
-        <a href="https://www.youtube.com/watch?v=OH3dPShZwag">the recent Greenpill podcast interview with Vitalik</a> , where he explains that public goods funding is 1 part mechanism & 1 part funding source
-        <br>4. <a href="https://twitter.com/owocki/status/1721890700206465273?s=46&t=X0oQ26a3ezptVAZLp1QFaw">an exploratory tweet I sent at Zuconnect</a>
+        <a href="https://www.youtube.com/watch?v=OH3dPShZwag">the recent Greenpill podcast interview with Vitalik</a> , where he explains that public goods funding is 1 part mechanism & 1 part funding source,
+        <br>4. <a href="https://twitter.com/owocki/status/1721890700206465273?s=46&t=X0oQ26a3ezptVAZLp1QFaw">an exploratory tweet I sent at Zuconnect</a> ... 
         <br>
         <br>
         ... I am trying to build a visual showing how funding from different funding sources is trickling through the ethereum ecosystem.  Having such a visual would allow one to grasp the entirety of how the PGF space is evolving together.
