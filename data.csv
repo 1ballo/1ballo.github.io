@@ -1,95 +1,85 @@
-// much of this pulled from https://docs.google.com/spreadsheets/d/1IOkWvVtDnuSIBXAtEDgN01aE_ivH8gNapW7eHnW3fNc/edit#gid=1872251957
-from,to,amount,comment
-EF Treasury,EF,60000000,column_1
-L2 Sequencer Fees,Optimism,40000000,column_1
-L2 Sequencer Fees,Gitcoin,100000,column_1
-L1 Sequencer Fees,Octant,1000000,column_1
-Donations,Gitcoin,7000000,column_1
-Donations,ClrFund,2500000,column_1
-Donations,Giveth,500000,column_1
-Donations,DAO Drops,250000,column_1
-Donations,Protocol Guild,10000000,column_1
-Donations,Questbook,100000,column_1
-HyperCert,HyperCerts,100000,column_1
-Donations,Hedgey,100000,column_1
-EF,Direct Grants,60000000,column_2
-Hedgey,Direct Grants,100000,column_2
-Questbook,Direct Grants,100000,column_2
-Optimism,RetroPGF,40000000,column_2
-Gitcoin,QF,6000000,column_2
-Gitcoin,Direct Grants,1000,column_2
-ClrFund,QF,250000,column_2
-Giveth,QF,500000,column_2
-DAO Drops,RetroPGF,250000,column_2
-Protocol Guild,Self Curating Registry,8000000,column_2
-HyperCerts,HyperCertS,100000,column_2
-Octant,Protocol Guild,125038.4,column_3
-Octant,Rotki,67832.8,column_3
-Octant,Hypercerts,55440,column_3
-Octant,The Tor Project,52386.4,column_3
-Octant,GIveth,219661.4,column_3
-Octant,Drips,26517.4,column_3
-Octant,OnionDAO,20799.2,column_3
-Octant,GItcoin,528354.2,column_3
-Octant,Ethereum Cat Herders,16081.8,column_3
-Octant,DAO Drops,60886,column_3
-Octant,Kernel,83822,column_3
-Octant,EthStaker,97645.2,column_3
-Octant,BrightID,13044.2,column_3
-Octant,Clr.fund,12923.6,column_3
-Octant,MetaGame,12719.8,column_3
-Octant,PublicHAUS,12700.4,column_3
-Octant,Glo Dollar,11531,column_3
-Octant,Pairwise,12104.6,column_3
-Octant,Praise,11933,column_3
-QF,Lenster,211049,column_3
-QF,JediSwap,175112,column_3
-QF,DefiLlama,173425,column_3
-QF,Lenstube,98430,column_3
-QF,L2BEAT,98424,column_3
-QF,Revoke.cash - Helping you stay safe in web3,95364,column_3
-QF,EthStaker,86327,column_3
-QF,Umbra,82289,column_3
-QF,Loanshark,65280,column_3
-QF,Via | Cross-chain router,64041,column_3
-QF,$Earth - Solarpunk Dao,61778,column_3
-QF,eth.limo,59229,column_3
-QF,BrightID 🔆 Universal Proof of Uniqueness,56363,column_3
-QF,IDriss - A more usable web3 for everyone,53261,column_3
-QF,StarkDeFi,50129,column_3
-QF,Chainlist,49502,column_3
-QF,Lighthouse by Sigma Prime,47629,column_3
-QF,Treegens - The Most Transparent & Rewarding Tree Planting,45748,column_3
-QF,ReFi Spring,45357,column_3
-QF,ethers.js,45203,column_3
-QF,POAPin,45131,column_3
-QF,Protocol Guild,44541,column_3
-QF,rotki,42872,column_3
-QF,Atlantis,42854,column_3
-QF,INTMAX,41541,column_3
-QF,Other,3255778,column_3
-RetroPGF,Protocol Guild,925119.66,column_3
-RetroPGF,L2BEAT,425448.6376,column_3
-RetroPGF,geth,382779.5328,column_3
-RetroPGF,ETHGlobal,381809.1632,column_3
-RetroPGF,BuidlGuidl,372129.0226,column_3
-RetroPGF,Solidity,360856.0456,column_3
-RetroPGF,Ethers,347173.4624,column_3
-RetroPGF,0xPARC,342049.0092,column_3
-RetroPGF,EIP4844 collection,324820.2012,column_3
-RetroPGF,Monorepo dependencies collection,313739.8838,column_3
-RetroPGF,ZachXBT,313032.7238,column_3
-RetroPGF,OPCraft & MUD (Lattice),304358.0286,column_3
-RetroPGF,OpenZeppelin,301729.8004,column_3
-RetroPGF,DefiLlama,284345.8986,column_3
-RetroPGF,Lighthouse,274663.9486,column_3
-RetroPGF,wagmi,259728.663,column_3
-RetroPGF,Remix Project,251782.3924,column_3
-RetroPGF,Gitcoin,251480.3222,column_3
-RetroPGF,Foundry,246796.8978,column_3
-RetroPGF,Snapshot,241859.51,column_3
-RetroPGF,rotki,241152.5824,column_3
-RetroPGF,Goerli,238222.8484,column_3
-RetroPGF,Erigon,235139.4482,column_3
-RetroPGF,Other,8979782.417,column_3
-
+from,to,amount,comment,comment_2,comment_3
+EF Treasury,EF,22000000,column_1,,
+L2 Sequencer Fees,Optimism / RPGF,16000000,column_1,,
+L2 Sequencer Fees,Gitcoin / QF,0,column_1,,
+L1 Sequencer Fees,Octant,1500000,column_1,,
+Donations,Gitcoin / QF,5100000,column_1,,
+Donations,ClrFund / QF,130000,column_1,,
+Donations,Giveth / Donations,500000,column_1,,
+Donations,Giveth / QF,100000,column_1,,
+Donations,DAO Drops / RPGF,250000,column_1,,
+Donations,Protocol Guild / Self Curating Registry,10000000,column_1,,
+Donations,Questbook / Direct Grants,720000,column_1,Include?  This is mostly for DAO ecosystems not ETH public goods,
+Donations,Hedgey  / Direct Grants,43000000,column_1,Include?  This is mostly for DAO ecosystems not ETH public goods,
+Donations,Drips  / Direct Grants,1500000,column_1,Include?  This is mostly for DAO ecosystems not ETH public goods,
+HyperCert,HyperCerts,100000,column_1,,
+Octant,Protocol Guild,125038.4,column_3,,
+Octant,Rotki,67832.8,column_3,,
+Octant,Hypercerts,55440,column_3,,
+Octant,The Tor Project,52386.4,column_3,,
+Octant,GIveth,219661.4,column_3,,
+Octant,Drips,44517.4,column_3,,
+Octant,OnionDAO,20799.2,column_3,,
+Octant,GItcoin,528354.2,column_3,,
+Octant,Ethereum Cat Herders,16081.8,column_3,,
+Octant,DAO DRops,60886,column_3,,
+Octant,Kernel,83822,column_3,,
+Octant,EthStaker,97645.2,column_3,,
+Octant,BrightID,13044.2,column_3,,
+Octant,Clr.fund,60003.6,column_3,,
+Octant,MetaGame,12719.8,column_3,,
+Octant,PublicHAUS,12700.4,column_3,,
+Octant,Glo Dollar,11531,column_3,,
+Octant,Pairwise,12104.6,column_3,,
+Octant,Praise,11933,column_3,,
+Octant,Supermodular,20000,column_3,,
+Gitcoin / QF,Lenster,211049,column_3,,
+Gitcoin / QF,JediSwap,175112,column_3,,
+Gitcoin / QF,DefiLlama,173425,column_3,,
+Gitcoin / QF,Lenstube,98430,column_3,,
+Gitcoin / QF,L2BEAT,98424,column_3,,
+Gitcoin / QF,Revoke.cash - Helping you stay safe in web3,95364,column_3,,
+Gitcoin / QF,EthStaker,86327,column_3,,
+Gitcoin / QF,Umbra,82289,column_3,,
+Gitcoin / QF,Loanshark,65280,column_3,,
+Gitcoin / QF,Via | Cross-chain router,64041,column_3,,
+Gitcoin / QF,$Earth - Solarpunk Dao,61778,column_3,,
+Gitcoin / QF,eth.limo,59229,column_3,,
+Gitcoin / QF,BrightID 🔆 Universal Proof of Uniqueness,56363,column_3,,
+Gitcoin / QF,IDriss - A more usable web3 for everyone,53261,column_3,,
+Gitcoin / QF,StarkDeFi,50129,column_3,,
+Gitcoin / QF,Chainlist,49502,column_3,,
+Gitcoin / QF,Lighthouse by Sigma Prime,47629,column_3,,
+Gitcoin / QF,Treegens - The Most Transparent & Rewarding Tree Planting,45748,column_3,,
+Gitcoin / QF,ReFi Spring,45357,column_3,,
+Gitcoin / QF,ethers.js,45203,column_3,,
+Gitcoin / QF,POAPin,45131,column_3,,
+Gitcoin / QF,Protocol Guild,44541,column_3,,
+Gitcoin / QF,rotki,42872,column_3,,
+Gitcoin / QF,Atlantis,42854,column_3,,
+Gitcoin / QF,INTMAX,41541,column_3,,
+Gitcoin / QF,Other,3255778,column_3,,
+Optimism / RPGF,Protocol Guild,925119.66,column_3,,
+Optimism / RPGF,L2BEAT,425448.6376,column_3,,
+Optimism / RPGF,geth,382779.5328,column_3,,
+Optimism / RPGF,ETHGlobal,381809.1632,column_3,,
+Optimism / RPGF,BuidlGuidl,372129.0226,column_3,,
+Optimism / RPGF,Solidity,360856.0456,column_3,,
+Optimism / RPGF,Ethers,347173.4624,column_3,,
+Optimism / RPGF,0xPARC,342049.0092,column_3,,
+Optimism / RPGF,EIP4844 collection,324820.2012,column_3,,
+Optimism / RPGF,Monorepo dependencies collection,313739.8838,column_3,,
+Optimism / RPGF,ZachXBT,313032.7238,column_3,,
+Optimism / RPGF,OPCraft & MUD (Lattice),304358.0286,column_3,,
+Optimism / RPGF,OpenZeppelin,301729.8004,column_3,,
+Optimism / RPGF,DefiLlama,284345.8986,column_3,,
+Optimism / RPGF,Lighthouse,274663.9486,column_3,,
+Optimism / RPGF,wagmi,259728.663,column_3,,
+Optimism / RPGF,Remix Project,251782.3924,column_3,,
+Optimism / RPGF,Gitcoin,251480.3222,column_3,,
+Optimism / RPGF,Foundry,246796.8978,column_3,,
+Optimism / RPGF,Snapshot,241859.51,column_3,,
+Optimism / RPGF,rotki,241152.5824,column_3,,
+Optimism / RPGF,Goerli,238222.8484,column_3,,
+Optimism / RPGF,Erigon,235139.4482,column_3,,
+Optimism / RPGF,Other,8979782.417,column_3,,
