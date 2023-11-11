@@ -1,51 +1,39 @@
 <html>
   <head>
-
-
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
       var baseUrl = function(){
         var baseurl = window.location.origin+window.location.pathname;
         return baseurl;        
       }
-
       var urlParams = function(){
         const queryString = window.location.search;
         return  new URLSearchParams(queryString);
       }
               
     var start = async function() {
-
       async function fetchAndParseCSVToArray(url) {
           try {
               // Fetch the CSV data
               const response = await fetch(url);
               const data = await response.text();
-
               // Parse the CSV data
               const lines = data.split('\n');
-
               // Remove empty lines (optional)
               return lines.filter(line => line.trim());
-
           } catch (error) {
               console.error('Error fetching or parsing CSV:', error);
               return []; // Return an empty array in case of an error
           }
       }
-
       var rows = await fetchAndParseCSVToArray('https://owocki.github.io/data.csv');
-
-
       google.charts.load('current', {'packages':['sankey']});
       google.charts.setOnLoadCallback(drawChart);
-
       function drawChart() {
       var colors = ['#a6cee3', '#b2df8a', '#fb9a99', '#fdbf6f',
                     '#cab2d6', '#ffff99', '#1f78b4', '#33a02c'];
-
       var options = {
-        height: 500, //window.innerHeight * 1.1,
+        height: window.innerHeight * 1.1,
         width: window.innerWidth- 50,
         sankey: {
           node: {
@@ -57,12 +45,11 @@
           }
         }
       };
-
-
+      document.getElementById('sankey_basic').style=height = window.innerHeight;
+      document.getElementById('sankey_basic').style=width = window.innerWidth;
         var _scale = function(x){
           return x;
         }
-
         if(urlParams().get('scaledown')){
           var _scale = function(x){
             return Math.pow(x, 1/3);
@@ -72,24 +59,18 @@
           document.getElementById("scaledown_off").style.fontWeight='bold';
         } else {
           document.getElementById("scaledown_on").style.fontWeight='bold';
-
         }
-
         if(urlParams().get('showprojects')){
             document.getElementById("title").style.display='none';
             document.getElementById("title_projects").style.display='block';
             document.getElementById("showprojects_off").style.fontWeight='bold';
         } else {
             document.getElementById("showprojects_on").style.fontWeight='bold';
-
         }
-
-
         var data = new google.visualization.DataTable();
         data.addColumn('string', 'From');
         data.addColumn('string', 'To');
         data.addColumn('number', 'Weight');
-
         var new_rows = []
         for(var i=1; i<rows.length; i++){
           var split_row = rows[i].split(',');
@@ -104,9 +85,7 @@
             }
           }
         }
-
         data.addRows(new_rows);
-
         // Instantiates and draws our chart, passing in some options.
         var chart = new google.visualization.Sankey(document.getElementById('sankey_basic'));
         chart.draw(data, options);
@@ -133,7 +112,7 @@
       <h2 style="width:33%; display: inline-block; text-align: center;">dApp/Org/Mechanism</h2>
       <h2 style="width:33%; display: inline-block; text-align: right;">Projects</h2>
     </div>
-    <div id="sankey_basic" style="height: 500px; width: 300px;"></div>
+    <div id="sankey_basic"></div>
     <div>
         Inspired by convos at Zuzalu + <a href="https://twitter.com/owocki/status/1721890700206465273?s=46&t=X0oQ26a3ezptVAZLp1QFaw">this tweet thread</a>. 
         <br>
