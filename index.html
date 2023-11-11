@@ -69,9 +69,21 @@
             //return (Math.sqrt(x));
             //return Math.sqrt(Math.sqrt(x));
           }
+          document.getElementById("scaledown_off").style.fontWeight='bold';
         } else {
+          document.getElementById("scaledown_on").style.fontWeight='bold';
 
         }
+
+        if(urlParams().get('showprojects')){
+            document.getElementById("title").style.display='none';
+            document.getElementById("title_projects").style.display='block';
+            document.getElementById("showprojects_off").style.fontWeight='bold';
+        } else {
+            document.getElementById("showprojects_on").style.fontWeight='bold';
+
+        }
+
 
         var data = new google.visualization.DataTable();
         data.addColumn('string', 'From');
@@ -83,10 +95,9 @@
           var split_row = rows[i].split(',');
           if(split_row[0] && split_row[1] && split_row[2]){
             var include = split_row[3] != 'column_3' || urlParams().get('showprojects');
-            if(urlParams().get('showprojects') && !urlParams().get('scaledown')){
-              if(i>100){
-                include=false;
-              }
+            console.log(split_row[4]);
+            if(split_row[4] && split_row[4] == 'Include?  This is mostly for DAO ecosystems not ETH public goods'){
+                include = false;
             }
             if (include){
               new_rows.push([split_row[0],split_row[1],_scale(Number(split_row[2]))]);
@@ -107,20 +118,31 @@
   <body>
     <h1> Public Goods Funding Flowing in Ethereum: 2023</h1>
     <div>
-        <text style="color:red;">WARNING: THIS IS AN ALPHA VERSION OF THIS SITE AND THE DATA IS NOT 100% CONFIRMED YET.<BR></text>
         mode: 
-        <br>-<a href="#" onclick="document.location=baseUrl() + '?scaledown=&showprojects='+urlParams().get('showprojects');">Regular (but Whale Dominated) 🐳</a> | <a href="#" onclick="document.location=baseUrl() + '?scaledown=1&showprojects='+urlParams().get('showprojects');">Logarthmic (Whales Scaled Down) 🐟</a>
-        <br>-<a href="#" onclick="document.location=baseUrl() + '?scaledown='+urlParams().get('scaledown')+'&showprojects='">NO Projects</a> | <a href="#" onclick="document.location=baseUrl() + '?scaledown='+urlParams().get('scaledown')+'&showprojects=1'">Show Projects</a>
+        <br>-<a id=scaledown_on href="#" onclick="document.location=baseUrl() + '?scaledown=&showprojects='+urlParams().get('showprojects');">Regular (but Whale Dominated) 🐳</a> 
+        | <a id=scaledown_off href="#" onclick="document.location=baseUrl() + '?scaledown=1&showprojects='+urlParams().get('showprojects');">Logarthmic (Whales Scaled Down) 🐟</a>
+        <br>-<a id=showprojects_on href="#" onclick="document.location=baseUrl() + '?scaledown='+urlParams().get('scaledown')+'&showprojects='">NO Projects</a> 
+        | <a id=showprojects_off href="#" onclick="document.location=baseUrl() + '?scaledown='+urlParams().get('scaledown')+'&showprojects=1'">Show Projects</a>
     </div>
-    <div>
+    <div id=title>
+      <h2 style="width:49%; display: inline-block;">Funding Source</h2>
+      <h2 style="width:50%; display: inline-block; text-align: right;">dApp/Org/Mechanism</h2>
+    </div>
+    <div id=title_projects style="display:none;">
       <h2 style="width:33%; display: inline-block;">Funding Source</h2>
-      <h2 style="width:33%; display: inline-block; text-align: center;">dApp/Org</h2>
-      <h2 style="width:33%; display: inline-block; text-align: right;">Mechanism</h2>
+      <h2 style="width:33%; display: inline-block; text-align: center;">dApp/Org/Mechanism</h2>
+      <h2 style="width:33%; display: inline-block; text-align: right;">Projects</h2>
     </div>
     <div id="sankey_basic" style="height: 500px; width: 300px;"></div>
     <div>
-        Inspired by convos at Zuzalu + <a href="https://twitter.com/owocki/status/1721890700206465273?s=46&t=X0oQ26a3ezptVAZLp1QFaw">this tweet thread</a>. The data presented here is a best guess good faith representation of the ecosystem.  If you have issues, please track in github or 
+        Inspired by convos at Zuzalu + <a href="https://twitter.com/owocki/status/1721890700206465273?s=46&t=X0oQ26a3ezptVAZLp1QFaw">this tweet thread</a>. 
+        <br>
+        <br>
+        The data presented here is a best guess good faith representation of the ecosystem.  If you have issues, please track in github or 
         <a href="https://github.com/owocki/owocki.github.io"> fork me</a>.
+        <br>
+        <br>
+        Get the data <a href="https://docs.google.com/spreadsheets/d/1IOkWvVtDnuSIBXAtEDgN01aE_ivH8gNapW7eHnW3fNc/edit#gid=34074864">here</a>
     </div>
   </body>
 </html>
