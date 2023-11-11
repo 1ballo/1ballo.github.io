@@ -45,7 +45,7 @@
       var showprojects = urlParams().get('showprojects') == 1;
       var scaledown = urlParams().get('scaledown')  == 1;
 
-      var rows = await fetchAndParseCSVToArray('https://owocki.github.io/data.csv');
+      var rows = await fetchAndParseCSVToArray('https://practicalpluralism.github.io/data.csv');
       google.charts.load('current', {'packages':['sankey']});
       google.charts.setOnLoadCallback(drawChart);
       function drawChart() {
@@ -176,7 +176,7 @@
         This data only covers ETH ecosystem public goods in 2023.  Additionally, this data is only up to date as of Nov 11 2023.  Notably, GG19, EF Q3/Q4, and Optimism RPGF Round 3 data are absent from the results thus far.
         <br>
         <br>
-        I also made the rather subjective decision to not include any funding from any projects/funding sources that primarily funded only specific non-eth ecosystems.  If you wish to fork out that decision you can do so <a href="https://github.com/owocki/owocki.github.io/blob/main/index.html#L80-L81">here</a>.
+        I also made the rather subjective decision to not include any funding from any projects/funding sources that primarily funded only specific non-eth ecosystems.  If you wish to fork out that decision you can do so <a href="https://github.com/owocki/practicalpluralism.github.io/blob/main/index.html#L80-L81">here</a>.
         <br>
         <br>
         Get the data <a href="https://docs.google.com/spreadsheets/d/1IOkWvVtDnuSIBXAtEDgN01aE_ivH8gNapW7eHnW3fNc/edit#gid=34074864">here</a>.  Feel free to propose edits!
@@ -189,7 +189,7 @@
         <br>
         <br>
          If you have issues, please track in github or 
-        <a href="https://github.com/owocki/owocki.github.io"> fork me</a>.
+        <a href="https://github.com/owocki/practicalpluralism.github.io"> fork me</a>.
         </div>
 
         <div>
