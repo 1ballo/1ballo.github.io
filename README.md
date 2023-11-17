@@ -5,3 +5,5 @@ A visual overview of the flows of funding through many public goods funding sour
 Built for the Zuzalu Hackathon. https://dorahacks.io/hackathon/hackzuzaluist/detail
 
 View it at https://practicalpluralism.github.io
+
+Join the telegram for this project: https://t.me/+nQU6E_Cvo5ZlNmNh
