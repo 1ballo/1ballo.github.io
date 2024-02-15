@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Funding Flows on Allo: $1bn</title>
+    <title>Funding Flows on Allo</title>
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
@@ -11,6 +11,10 @@
 
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
+    function numberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+
       var baseUrl = function(){
         var baseurl = window.location.origin+window.location.pathname;
         return baseurl;        
@@ -93,6 +97,7 @@
         data.addColumn('string', 'To');
         data.addColumn('number', 'Weight');
         var new_rows = []
+        var amount = 0;
         for(var i=1; i<rows.length; i++){
           var split_row = rows[i].split(',');
           if(split_row[0] && split_row[1] && split_row[2]){
@@ -103,9 +108,11 @@
             }
             if (include){
               new_rows.push([split_row[0],split_row[1],_scale(Number(split_row[2]))]);
+              amount += parseFloat(split_row[2]);
             }
           }
         }
+        document.getElementById('amount').innerHTML = numberWithCommas(Math.round(amount));
         data.addRows(new_rows);
         // Instantiates and draws our chart, passing in some options.
         var chart = new google.visualization.Sankey(document.getElementById('sankey_basic'));
@@ -116,7 +123,7 @@
     </script>
   </head>
   <body style="font-family: PT Serif,sans-serif; background: rgb(255,255,255); background: linear-gradient(-4deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 90%, rgba(147,243,231,1) 100%);">
-    <h1 style="font-size: 2em;">$1bn on Allo</h1>
+    <h1 style="font-size: 2em;">$<span id=amount></span> on Allo</h1>
     <div>
         mode: 
         <br>-<a id=scaledown_on href="#" onclick="document.location=baseUrl() + '?scaledown=&showprojects='+urlParams().get('showprojects');">Regular (but Whale Dominated) 🐳</a> 
