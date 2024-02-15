@@ -42,7 +42,7 @@
               return []; // Return an empty array in case of an error
           }
       }
-      var showprojects = urlParams().get('showprojects') == 1;
+      var showprojects = 1;
       var scaledown = urlParams().get('scaledown')  == 1;
 
       var rows = await fetchAndParseCSVToArray('https://raw.githubusercontent.com/owocki/sankeyvis/main/data.csv');
@@ -85,11 +85,8 @@
           document.getElementById("scaledown_on").style.fontWeight='bold';
         }
         if(showprojects){
-            document.getElementById("title").style.display='none';
             document.getElementById("title_projects").style.display='block';
-            document.getElementById("showprojects_off").style.fontWeight='bold';
         } else {
-            document.getElementById("showprojects_on").style.fontWeight='bold';
         }
         var data = new google.visualization.DataTable();
         data.addColumn('string', 'From');
@@ -124,17 +121,10 @@
         mode: 
         <br>-<a id=scaledown_on href="#" onclick="document.location=baseUrl() + '?scaledown=&showprojects='+urlParams().get('showprojects');">Regular (but Whale Dominated) 🐳</a> 
         | <a id=scaledown_off href="#" onclick="document.location=baseUrl() + '?scaledown=1&showprojects='+urlParams().get('showprojects');">Logarthmic (Whales Scaled Down) 🐟</a>
-        <br>-<a id=showprojects_on href="#" onclick="document.location=baseUrl() + '?scaledown='+urlParams().get('scaledown')+'&showprojects='">NO Projects</a> 
-        | <a id=showprojects_off href="#" onclick="document.location=baseUrl() + '?scaledown='+urlParams().get('scaledown')+'&showprojects=1'">Show Projects</a>
-    </div>
-    <div id=title>
-      <h2 style="width:49%; display: inline-block;">Funding Source</h2>
-      <h2 style="width:50%; display: inline-block; text-align: right;">dApp/Org/Mechanism</h2>
     </div>
     <div id=title_projects style="display:none;">
-      <h2 style="width:33%; display: inline-block;">Funding Source</h2>
-      <h2 style="width:33%; display: inline-block; text-align: center;">dApp/Org/Mechanism</h2>
-      <h2 style="width:33%; display: inline-block; text-align: right;">Projects</h2>
+      <h2 style="width:49%; display: inline-block;">Funding Source</h2>
+      <h2 style="width:49%; display: inline-block; text-align: center;">dApp/Org/Mechanism</h2>
     </div>
     <div id="sankey_basic"></div>
  
