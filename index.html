@@ -45,7 +45,7 @@
       var showprojects = urlParams().get('showprojects') == 1;
       var scaledown = urlParams().get('scaledown')  == 1;
 
-      var rows = await fetchAndParseCSVToArray('https://practicalpluralism.github.io/data.csv');
+      var rows = await fetchAndParseCSVToArray('https://raw.githubusercontent.com/owocki/sankeyvis/main/data.csv');
       google.charts.load('current', {'packages':['sankey']});
       google.charts.setOnLoadCallback(drawChart);
       function drawChart() {
@@ -119,9 +119,7 @@
     </script>
   </head>
   <body style="font-family: PT Serif,sans-serif; background: rgb(255,255,255); background: linear-gradient(-4deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 90%, rgba(147,243,231,1) 100%);">
-    <img src="img/logo.png" style="max-width: 150px; vertical-align:middle; ">
-    <h1 style="font-size: 2em;">Ethereum 2023 Funding Flows</h1>
-    <h2>Visualizing Public Goods Funding from Source to Destination</h2>
+    <h1 style="font-size: 2em;">$1bn on Allo</h1>
     <div>
         mode: 
         <br>-<a id=scaledown_on href="#" onclick="document.location=baseUrl() + '?scaledown=&showprojects='+urlParams().get('showprojects');">Regular (but Whale Dominated) 🐳</a> 
