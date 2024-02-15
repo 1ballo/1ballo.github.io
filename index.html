@@ -47,7 +47,7 @@
           }
       }
       var showprojects = 1;
-      var scaledown = urlParams().get('scaledown')  == 1;
+      var scaledown = 1;
 
       var rows = await fetchAndParseCSVToArray('https://raw.githubusercontent.com/owocki/sankeyvis/main/data.csv');
       google.charts.load('current', {'packages':['sankey']});
@@ -76,7 +76,7 @@
       document.getElementById('sankey_basic').style=height = window.innerHeight;
       document.getElementById('sankey_basic').style=width = window.innerWidth;
         var _scale = function(x){
-          return x;
+          return x * 1.0;
         }
         if(scaledown){
           var _scale = function(x){
@@ -84,9 +84,7 @@
             //return (Math.sqrt(x));
             //return Math.sqrt(Math.sqrt(x));
           }
-          document.getElementById("scaledown_off").style.fontWeight='bold';
         } else {
-          document.getElementById("scaledown_on").style.fontWeight='bold';
         }
         if(showprojects){
             document.getElementById("title_projects").style.display='block';
@@ -125,9 +123,6 @@
   <body style="font-family: PT Serif,sans-serif; background: rgb(255,255,255); background: linear-gradient(-4deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 90%, rgba(147,243,231,1) 100%);">
     <h1 style="font-size: 2em;">$<span id=amount></span> on Allo</h1>
     <div>
-        mode: 
-        <br>-<a id=scaledown_on href="#" onclick="document.location=baseUrl() + '?scaledown=&showprojects='+urlParams().get('showprojects');">Regular (but Whale Dominated) 🐳</a> 
-        | <a id=scaledown_off href="#" onclick="document.location=baseUrl() + '?scaledown=1&showprojects='+urlParams().get('showprojects');">Logarthmic (Whales Scaled Down) 🐟</a>
     </div>
     <div id=title_projects style="display:none;">
       <h2 style="width:49%; display: inline-block;">Funding Source</h2>
