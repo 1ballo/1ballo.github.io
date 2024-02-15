@@ -1,31 +1,319 @@
 from,to,amount,comment,comment2,
-ETH Ecosystem Fund 1,QF,679868.0021,1m * rand,ETH Ecosystem Fund,1
-ETH Ecosystem Fund 1,Direct Grants,833990.3551,1m * rand,ETH Ecosystem Fund,1
-ETH Ecosystem Fund 1,RPGF,95203.26828,1m * rand,ETH Ecosystem Fund,1
-ETH Ecosystem Fund 1,Conviction Voting,4058.931412,10k * rand,ETH Ecosystem Fund,1
-ETH Ecosystem Fund 1,Streaming QF,3707.179107,10k * rand,ETH Ecosystem Fund,1
-ETH Ecosystem Fund 1,Other Mechanisms,7149.684881,10k * rand,ETH Ecosystem Fund,1
-L2 Ecosystem Fund 1,QF,420681.5709,1m * rand,L2 Ecosystem Fund,1
-L2 Ecosystem Fund 1,Direct Grants,372315.0168,1m * rand,L2 Ecosystem Fund,1
-L2 Ecosystem Fund 1,RPGF,473060.6366,1m * rand,L2 Ecosystem Fund,1
-L2 Ecosystem Fund 1,Conviction Voting,7723.510515,10k * rand,L2 Ecosystem Fund,1
-L2 Ecosystem Fund 1,Streaming QF,3102.353566,10k * rand,L2 Ecosystem Fund,1
-L2 Ecosystem Fund 1,Other Mechanisms,162.3135978,10k * rand,L2 Ecosystem Fund,1
-L2 Ecosystem Fund 2,QF,445744.6455,1m * rand,L2 Ecosystem Fund,2
-L2 Ecosystem Fund 2,Direct Grants,442412.5066,1m * rand,L2 Ecosystem Fund,2
-L2 Ecosystem Fund 2,RPGF,196283.1696,1m * rand,L2 Ecosystem Fund,2
-L2 Ecosystem Fund 2,Conviction Voting,5988.302761,10k * rand,L2 Ecosystem Fund,2
-L2 Ecosystem Fund 2,Streaming QF,9938.000439,10k * rand,L2 Ecosystem Fund,2
-L2 Ecosystem Fund 2,Other Mechanisms,1789.31344,10k * rand,L2 Ecosystem Fund,2
-LST Ecosystem Fund 1,QF,212177.8147,1m * rand,LST Ecosystem Fund,1
-LST Ecosystem Fund 1,Direct Grants,908495.422,1m * rand,LST Ecosystem Fund,1
-LST Ecosystem Fund 1,RPGF,195084.4422,1m * rand,LST Ecosystem Fund,1
-LST Ecosystem Fund 1,Conviction Voting,6518.356998,10k * rand,LST Ecosystem Fund,1
-LST Ecosystem Fund 1,Streaming QF,7702.879663,10k * rand,LST Ecosystem Fund,1
-LST Ecosystem Fund 1,Other Mechanisms,5352.349588,10k * rand,LST Ecosystem Fund,1
-LRT Ecosystem Fund 1,QF,40732.86606,1m * rand,LRT Ecosystem Fund,1
-LRT Ecosystem Fund 1,Direct Grants,733653.5984,1m * rand,LRT Ecosystem Fund,1
-LRT Ecosystem Fund 1,RPGF,639347.9087,1m * rand,LRT Ecosystem Fund,1
-LRT Ecosystem Fund 1,Conviction Voting,6957.477564,10k * rand,LRT Ecosystem Fund,1
-LRT Ecosystem Fund 1,Streaming QF,4238.659799,10k * rand,LRT Ecosystem Fund,1
-LRT Ecosystem Fund 1,Other Mechanisms,945.9898623,10k * rand,LRT Ecosystem Fund,1
+ETH Ecosystem Fund 1,QF,438677.909,1m * rand,ETH Ecosystem Fund,1
+ETH Ecosystem Fund 1,Direct Grants,352067.7439,1m * rand,ETH Ecosystem Fund,1
+ETH Ecosystem Fund 1,RPGF,859211.0919,1m * rand,ETH Ecosystem Fund,1
+ETH Ecosystem Fund 1,Conviction Voting,9115.848858,10k * rand,ETH Ecosystem Fund,1
+ETH Ecosystem Fund 1,Streaming QF,1040.692432,10k * rand,ETH Ecosystem Fund,1
+ETH Ecosystem Fund 1,Other Mechanisms,1130.216152,10k * rand,ETH Ecosystem Fund,1
+L2 Ecosystem Fund 1,QF,515226.9734,1m * rand,L2 Ecosystem Fund,1
+L2 Ecosystem Fund 1,Direct Grants,390428.4416,1m * rand,L2 Ecosystem Fund,1
+L2 Ecosystem Fund 1,RPGF,615604.0214,1m * rand,L2 Ecosystem Fund,1
+L2 Ecosystem Fund 1,Conviction Voting,5281.125584,10k * rand,L2 Ecosystem Fund,1
+L2 Ecosystem Fund 1,Streaming QF,3796.3793,10k * rand,L2 Ecosystem Fund,1
+L2 Ecosystem Fund 1,Other Mechanisms,1258.048319,10k * rand,L2 Ecosystem Fund,1
+L2 Ecosystem Fund 2,QF,713900.7099,1m * rand,L2 Ecosystem Fund,2
+L2 Ecosystem Fund 2,Direct Grants,549470.308,1m * rand,L2 Ecosystem Fund,2
+L2 Ecosystem Fund 2,RPGF,646290.0516,1m * rand,L2 Ecosystem Fund,2
+L2 Ecosystem Fund 2,Conviction Voting,4518.811922,10k * rand,L2 Ecosystem Fund,2
+L2 Ecosystem Fund 2,Streaming QF,9011.470894,10k * rand,L2 Ecosystem Fund,2
+L2 Ecosystem Fund 2,Other Mechanisms,5065.388025,10k * rand,L2 Ecosystem Fund,2
+LST Ecosystem Fund 1,QF,518049.3808,1m * rand,LST Ecosystem Fund,1
+LST Ecosystem Fund 1,Direct Grants,754592.4229,1m * rand,LST Ecosystem Fund,1
+LST Ecosystem Fund 1,RPGF,76068.78665,1m * rand,LST Ecosystem Fund,1
+LST Ecosystem Fund 1,Conviction Voting,2344.415595,10k * rand,LST Ecosystem Fund,1
+LST Ecosystem Fund 1,Streaming QF,7381.654918,10k * rand,LST Ecosystem Fund,1
+LST Ecosystem Fund 1,Other Mechanisms,4932.317333,10k * rand,LST Ecosystem Fund,1
+LRT Ecosystem Fund 1,QF,510432.2051,1m * rand,LRT Ecosystem Fund,1
+LRT Ecosystem Fund 1,Direct Grants,392094.8883,1m * rand,LRT Ecosystem Fund,1
+LRT Ecosystem Fund 1,RPGF,799549.7827,1m * rand,LRT Ecosystem Fund,1
+LRT Ecosystem Fund 1,Conviction Voting,8645.021695,10k * rand,LRT Ecosystem Fund,1
+LRT Ecosystem Fund 1,Streaming QF,9836.412138,10k * rand,LRT Ecosystem Fund,1
+LRT Ecosystem Fund 1,Other Mechanisms,993.7198365,10k * rand,LRT Ecosystem Fund,1
+DEFI Project Ecosystem Fund 1,QF,424406.0939,1m * rand,DEFI Project Ecosystem Fund,1
+DEFI Project Ecosystem Fund 1,Direct Grants,955616.9118,1m * rand,DEFI Project Ecosystem Fund,1
+DEFI Project Ecosystem Fund 1,RPGF,232806.0391,1m * rand,DEFI Project Ecosystem Fund,1
+DEFI Project Ecosystem Fund 1,Conviction Voting,3087.534567,10k * rand,DEFI Project Ecosystem Fund,1
+DEFI Project Ecosystem Fund 1,Streaming QF,4505.966982,10k * rand,DEFI Project Ecosystem Fund,1
+NFT Project Ecosystem Fund 1,Other Mechanisms,8472.947008,10k * rand,NFT Project Ecosystem Fund,1
+NFT Project Ecosystem Fund 1,QF,872734.5354,1m * rand,NFT Project Ecosystem Fund,1
+NFT Project Ecosystem Fund 1,Direct Grants,519283.1829,1m * rand,NFT Project Ecosystem Fund,1
+NFT Project Ecosystem Fund 1,RPGF,961322.2374,1m * rand,NFT Project Ecosystem Fund,1
+NFT Project Ecosystem Fund 1,Conviction Voting,1480.036858,10k * rand,NFT Project Ecosystem Fund,1
+NFT Project Ecosystem Fund 1,Streaming QF,5936.152294,10k * rand,NFT Project Ecosystem Fund,1
+NFT Project Ecosystem Fund 1,Other Mechanisms,5392.806575,10k * rand,NFT Project Ecosystem Fund,1
+L2 Ecosystem Fund 3,QF,351138.9118,1m * rand,L2 Ecosystem Fund,3
+L2 Ecosystem Fund 3,Direct Grants,867565.7381,1m * rand,L2 Ecosystem Fund,3
+L2 Ecosystem Fund 3,RPGF,753732.1188,1m * rand,L2 Ecosystem Fund,3
+L2 Ecosystem Fund 3,Conviction Voting,91.44250588,10k * rand,L2 Ecosystem Fund,3
+L2 Ecosystem Fund 3,Streaming QF,340.3229936,10k * rand,L2 Ecosystem Fund,3
+L2 Ecosystem Fund 3,Other Mechanisms,3712.402092,10k * rand,L2 Ecosystem Fund,3
+L2 Ecosystem Fund 4,QF,450372.142,1m * rand,L2 Ecosystem Fund,4
+L2 Ecosystem Fund 4,Direct Grants,306712.2328,1m * rand,L2 Ecosystem Fund,4
+L2 Ecosystem Fund 4,RPGF,668211.8804,1m * rand,L2 Ecosystem Fund,4
+L2 Ecosystem Fund 4,Conviction Voting,3946.646223,10k * rand,L2 Ecosystem Fund,4
+L2 Ecosystem Fund 4,Streaming QF,7741.552217,10k * rand,L2 Ecosystem Fund,4
+L2 Ecosystem Fund 4,Other Mechanisms,2750.316541,10k * rand,L2 Ecosystem Fund,4
+L2 Ecosystem Fund 5,QF,97486.00044,1m * rand,L2 Ecosystem Fund,5
+L2 Ecosystem Fund 5,Direct Grants,745537.1027,1m * rand,L2 Ecosystem Fund,5
+L2 Ecosystem Fund 5,RPGF,230338.89,1m * rand,L2 Ecosystem Fund,5
+L2 Ecosystem Fund 5,Conviction Voting,9360.174394,10k * rand,L2 Ecosystem Fund,5
+L2 Ecosystem Fund 5,Streaming QF,6905.220444,10k * rand,L2 Ecosystem Fund,5
+L2 Ecosystem Fund 5,Other Mechanisms,3696.836148,10k * rand,L2 Ecosystem Fund,5
+L2 Ecosystem Fund 6,QF,245217.9229,1m * rand,L2 Ecosystem Fund,6
+L2 Ecosystem Fund 6,Direct Grants,983367.6076,1m * rand,L2 Ecosystem Fund,6
+L2 Ecosystem Fund 6,RPGF,396992.2696,1m * rand,L2 Ecosystem Fund,6
+L2 Ecosystem Fund 6,Conviction Voting,9171.602216,10k * rand,L2 Ecosystem Fund,6
+L2 Ecosystem Fund 6,Streaming QF,2665.612447,10k * rand,L2 Ecosystem Fund,6
+L2 Ecosystem Fund 6,Other Mechanisms,3842.323522,10k * rand,L2 Ecosystem Fund,6
+L2 Ecosystem Fund 7,QF,633550.8905,1m * rand,L2 Ecosystem Fund,7
+L2 Ecosystem Fund 7,Direct Grants,808299.3303,1m * rand,L2 Ecosystem Fund,7
+L2 Ecosystem Fund 7,RPGF,214097.7006,1m * rand,L2 Ecosystem Fund,7
+L2 Ecosystem Fund 7,Conviction Voting,8615.185851,10k * rand,L2 Ecosystem Fund,7
+L2 Ecosystem Fund 7,Streaming QF,627.8275762,10k * rand,L2 Ecosystem Fund,7
+L2 Ecosystem Fund 7,Other Mechanisms,701.158636,10k * rand,L2 Ecosystem Fund,7
+L2 Ecosystem Fund 8,QF,939383.3176,1m * rand,L2 Ecosystem Fund,8
+L2 Ecosystem Fund 8,Direct Grants,377343.5759,1m * rand,L2 Ecosystem Fund,8
+L2 Ecosystem Fund 8,RPGF,434710.7029,1m * rand,L2 Ecosystem Fund,8
+L2 Ecosystem Fund 8,Conviction Voting,8902.473674,10k * rand,L2 Ecosystem Fund,8
+L2 Ecosystem Fund 8,Streaming QF,9139.522407,10k * rand,L2 Ecosystem Fund,8
+L2 Ecosystem Fund 8,Other Mechanisms,9930.345702,10k * rand,L2 Ecosystem Fund,8
+L2 Ecosystem Fund 9,QF,923142.178,1m * rand,L2 Ecosystem Fund,9
+L2 Ecosystem Fund 9,Direct Grants,918610.2444,1m * rand,L2 Ecosystem Fund,9
+L2 Ecosystem Fund 9,RPGF,580474.6114,1m * rand,L2 Ecosystem Fund,9
+L2 Ecosystem Fund 9,Conviction Voting,6422.037221,10k * rand,L2 Ecosystem Fund,9
+L2 Ecosystem Fund 9,Streaming QF,8080.824996,10k * rand,L2 Ecosystem Fund,9
+L2 Ecosystem Fund 9,Other Mechanisms,8362.115303,10k * rand,L2 Ecosystem Fund,9
+L2 Ecosystem Fund 10,QF,673714.3136,1m * rand,L2 Ecosystem Fund,10
+L2 Ecosystem Fund 10,Direct Grants,420811.0119,1m * rand,L2 Ecosystem Fund,10
+L2 Ecosystem Fund 10,RPGF,930636.8093,1m * rand,L2 Ecosystem Fund,10
+L2 Ecosystem Fund 10,Conviction Voting,6060.638618,10k * rand,L2 Ecosystem Fund,10
+L2 Ecosystem Fund 10,Streaming QF,3464.004144,10k * rand,L2 Ecosystem Fund,10
+L2 Ecosystem Fund 10,Other Mechanisms,9717.59894,10k * rand,L2 Ecosystem Fund,10
+L2 Ecosystem Fund 11,QF,78267.81373,1m * rand,L2 Ecosystem Fund,11
+L2 Ecosystem Fund 11,Direct Grants,122908.9098,1m * rand,L2 Ecosystem Fund,11
+L2 Ecosystem Fund 11,RPGF,119695.7254,1m * rand,L2 Ecosystem Fund,11
+L2 Ecosystem Fund 11,Conviction Voting,4214.541641,10k * rand,L2 Ecosystem Fund,11
+L2 Ecosystem Fund 11,Streaming QF,3459.725214,10k * rand,L2 Ecosystem Fund,11
+L2 Ecosystem Fund 11,Other Mechanisms,6864.624341,10k * rand,L2 Ecosystem Fund,11
+L2 Ecosystem Fund 12,QF,518767.054,1m * rand,L2 Ecosystem Fund,12
+L2 Ecosystem Fund 12,Direct Grants,111876.3502,1m * rand,L2 Ecosystem Fund,12
+L2 Ecosystem Fund 12,RPGF,562885.6003,1m * rand,L2 Ecosystem Fund,12
+L2 Ecosystem Fund 12,Conviction Voting,8371.51941,10k * rand,L2 Ecosystem Fund,12
+L2 Ecosystem Fund 12,Streaming QF,7510.31385,10k * rand,L2 Ecosystem Fund,12
+L2 Ecosystem Fund 12,Other Mechanisms,641.314755,10k * rand,L2 Ecosystem Fund,12
+L2 Ecosystem Fund 13,QF,74013.17727,1m * rand,L2 Ecosystem Fund,13
+L2 Ecosystem Fund 13,Direct Grants,613825.4897,1m * rand,L2 Ecosystem Fund,13
+L2 Ecosystem Fund 13,RPGF,937972.829,1m * rand,L2 Ecosystem Fund,13
+L2 Ecosystem Fund 13,Conviction Voting,7080.327011,10k * rand,L2 Ecosystem Fund,13
+L2 Ecosystem Fund 13,Streaming QF,5232.452797,10k * rand,L2 Ecosystem Fund,13
+L2 Ecosystem Fund 13,Other Mechanisms,2196.687277,10k * rand,L2 Ecosystem Fund,13
+L2 Ecosystem Fund 14,QF,220995.2909,1m * rand,L2 Ecosystem Fund,14
+L2 Ecosystem Fund 14,Direct Grants,917187.8321,1m * rand,L2 Ecosystem Fund,14
+L2 Ecosystem Fund 14,RPGF,796491.2706,1m * rand,L2 Ecosystem Fund,14
+L2 Ecosystem Fund 14,Conviction Voting,4155.737933,10k * rand,L2 Ecosystem Fund,14
+L2 Ecosystem Fund 14,Streaming QF,5275.965146,10k * rand,L2 Ecosystem Fund,14
+L2 Ecosystem Fund 14,Other Mechanisms,8001.788777,10k * rand,L2 Ecosystem Fund,14
+L2 Ecosystem Fund 15,QF,952727.4431,1m * rand,L2 Ecosystem Fund,15
+L2 Ecosystem Fund 15,Direct Grants,699463.0578,1m * rand,L2 Ecosystem Fund,15
+L2 Ecosystem Fund 15,RPGF,906218.9933,1m * rand,L2 Ecosystem Fund,15
+L2 Ecosystem Fund 15,Conviction Voting,158.0950515,10k * rand,L2 Ecosystem Fund,15
+L2 Ecosystem Fund 15,Streaming QF,7959.413756,10k * rand,L2 Ecosystem Fund,15
+L2 Ecosystem Fund 15,Other Mechanisms,4755.771106,10k * rand,L2 Ecosystem Fund,15
+L2 Ecosystem Fund 16,QF,116453.9398,1m * rand,L2 Ecosystem Fund,16
+L2 Ecosystem Fund 16,Direct Grants,604028.0076,1m * rand,L2 Ecosystem Fund,16
+L2 Ecosystem Fund 16,RPGF,722403.1212,1m * rand,L2 Ecosystem Fund,16
+L2 Ecosystem Fund 16,Conviction Voting,9694.951375,10k * rand,L2 Ecosystem Fund,16
+L2 Ecosystem Fund 16,Streaming QF,5958.444339,10k * rand,L2 Ecosystem Fund,16
+L2 Ecosystem Fund 16,Other Mechanisms,4540.163623,10k * rand,L2 Ecosystem Fund,16
+L2 Ecosystem Fund 17,QF,615388.2032,1m * rand,L2 Ecosystem Fund,17
+L2 Ecosystem Fund 17,Direct Grants,602663.2512,1m * rand,L2 Ecosystem Fund,17
+L2 Ecosystem Fund 17,RPGF,15354.65948,1m * rand,L2 Ecosystem Fund,17
+L2 Ecosystem Fund 17,Conviction Voting,5670.685525,10k * rand,L2 Ecosystem Fund,17
+L2 Ecosystem Fund 17,Streaming QF,8534.233109,10k * rand,L2 Ecosystem Fund,17
+L2 Ecosystem Fund 17,Other Mechanisms,9044.642676,10k * rand,L2 Ecosystem Fund,17
+L2 Ecosystem Fund 18,QF,382641.9644,1m * rand,L2 Ecosystem Fund,18
+L2 Ecosystem Fund 18,Direct Grants,214264.2603,1m * rand,L2 Ecosystem Fund,18
+L2 Ecosystem Fund 18,RPGF,948320.2479,1m * rand,L2 Ecosystem Fund,18
+L2 Ecosystem Fund 18,Conviction Voting,8103.698985,10k * rand,L2 Ecosystem Fund,18
+L2 Ecosystem Fund 18,Streaming QF,555.8922574,10k * rand,L2 Ecosystem Fund,18
+L2 Ecosystem Fund 18,Other Mechanisms,9375.769979,10k * rand,L2 Ecosystem Fund,18
+L2 Ecosystem Fund 19,QF,935709.5813,1m * rand,L2 Ecosystem Fund,19
+L2 Ecosystem Fund 19,Direct Grants,371475.0345,1m * rand,L2 Ecosystem Fund,19
+L2 Ecosystem Fund 19,RPGF,88124.91599,1m * rand,L2 Ecosystem Fund,19
+L2 Ecosystem Fund 19,Conviction Voting,979.3826024,10k * rand,L2 Ecosystem Fund,19
+L2 Ecosystem Fund 19,Streaming QF,4034.803072,10k * rand,L2 Ecosystem Fund,19
+L2 Ecosystem Fund 19,Other Mechanisms,4837.20264,10k * rand,L2 Ecosystem Fund,19
+L2 Ecosystem Fund 20,QF,46178.94047,1m * rand,L2 Ecosystem Fund,20
+L2 Ecosystem Fund 20,Direct Grants,334912.216,1m * rand,L2 Ecosystem Fund,20
+L2 Ecosystem Fund 20,RPGF,962477.3701,1m * rand,L2 Ecosystem Fund,20
+L2 Ecosystem Fund 20,Conviction Voting,2343.679332,10k * rand,L2 Ecosystem Fund,20
+L2 Ecosystem Fund 20,Streaming QF,8036.922003,10k * rand,L2 Ecosystem Fund,20
+L2 Ecosystem Fund 20,Other Mechanisms,8700.184416,10k * rand,L2 Ecosystem Fund,20
+L2 Ecosystem Fund 21,QF,39004.19218,1m * rand,L2 Ecosystem Fund,21
+L2 Ecosystem Fund 21,Direct Grants,858803.9478,1m * rand,L2 Ecosystem Fund,21
+L2 Ecosystem Fund 21,RPGF,856918.8849,1m * rand,L2 Ecosystem Fund,21
+L2 Ecosystem Fund 21,Conviction Voting,593.727887,10k * rand,L2 Ecosystem Fund,21
+L2 Ecosystem Fund 21,Streaming QF,1001.227848,10k * rand,L2 Ecosystem Fund,21
+L2 Ecosystem Fund 21,Other Mechanisms,1024.957189,10k * rand,L2 Ecosystem Fund,21
+L2 Ecosystem Fund 22,QF,379829.6951,1m * rand,L2 Ecosystem Fund,22
+L2 Ecosystem Fund 22,Direct Grants,981199.2311,1m * rand,L2 Ecosystem Fund,22
+L2 Ecosystem Fund 22,RPGF,810438.7547,1m * rand,L2 Ecosystem Fund,22
+L2 Ecosystem Fund 22,Conviction Voting,9909.443473,10k * rand,L2 Ecosystem Fund,22
+L2 Ecosystem Fund 22,Streaming QF,5842.45742,10k * rand,L2 Ecosystem Fund,22
+L2 Ecosystem Fund 22,Other Mechanisms,1298.986993,10k * rand,L2 Ecosystem Fund,22
+L2 Ecosystem Fund 23,QF,163004.7961,1m * rand,L2 Ecosystem Fund,23
+L2 Ecosystem Fund 23,Direct Grants,624727.0381,1m * rand,L2 Ecosystem Fund,23
+L2 Ecosystem Fund 23,RPGF,945402.2149,1m * rand,L2 Ecosystem Fund,23
+L2 Ecosystem Fund 23,Conviction Voting,4807.434947,10k * rand,L2 Ecosystem Fund,23
+L2 Ecosystem Fund 23,Streaming QF,3271.706319,10k * rand,L2 Ecosystem Fund,23
+L2 Ecosystem Fund 23,Other Mechanisms,6372.335278,10k * rand,L2 Ecosystem Fund,23
+L2 Ecosystem Fund 24,QF,506961.6175,1m * rand,L2 Ecosystem Fund,24
+L2 Ecosystem Fund 24,Direct Grants,287898.361,1m * rand,L2 Ecosystem Fund,24
+L2 Ecosystem Fund 24,RPGF,812653.3463,1m * rand,L2 Ecosystem Fund,24
+L2 Ecosystem Fund 24,Conviction Voting,3794.580472,10k * rand,L2 Ecosystem Fund,24
+L2 Ecosystem Fund 24,Streaming QF,7890.66978,10k * rand,L2 Ecosystem Fund,24
+L2 Ecosystem Fund 24,Other Mechanisms,9833.529865,10k * rand,L2 Ecosystem Fund,24
+L2 Ecosystem Fund 25,QF,561796.8715,1m * rand,L2 Ecosystem Fund,25
+L2 Ecosystem Fund 25,Direct Grants,729216.1875,1m * rand,L2 Ecosystem Fund,25
+L2 Ecosystem Fund 25,RPGF,788844.9211,1m * rand,L2 Ecosystem Fund,25
+L2 Ecosystem Fund 25,Conviction Voting,4554.824575,10k * rand,L2 Ecosystem Fund,25
+L2 Ecosystem Fund 25,Streaming QF,7509.351792,10k * rand,L2 Ecosystem Fund,25
+L2 Ecosystem Fund 25,Other Mechanisms,6614.139053,10k * rand,L2 Ecosystem Fund,25
+L2 Ecosystem Fund 26,QF,184839.8397,1m * rand,L2 Ecosystem Fund,26
+L2 Ecosystem Fund 26,Direct Grants,803335.9334,1m * rand,L2 Ecosystem Fund,26
+L2 Ecosystem Fund 26,RPGF,406968.6208,1m * rand,L2 Ecosystem Fund,26
+L2 Ecosystem Fund 26,Conviction Voting,3615.037111,10k * rand,L2 Ecosystem Fund,26
+L2 Ecosystem Fund 26,Streaming QF,1351.797895,10k * rand,L2 Ecosystem Fund,26
+L2 Ecosystem Fund 26,Other Mechanisms,3863.858239,10k * rand,L2 Ecosystem Fund,26
+L2 Ecosystem Fund 27,QF,426708.3977,1m * rand,L2 Ecosystem Fund,27
+L2 Ecosystem Fund 27,Direct Grants,716020.7809,1m * rand,L2 Ecosystem Fund,27
+L2 Ecosystem Fund 27,RPGF,993845.7164,1m * rand,L2 Ecosystem Fund,27
+L2 Ecosystem Fund 27,Conviction Voting,6193.533258,10k * rand,L2 Ecosystem Fund,27
+L2 Ecosystem Fund 27,Streaming QF,2242.393944,10k * rand,L2 Ecosystem Fund,27
+L2 Ecosystem Fund 27,Other Mechanisms,4720.997153,10k * rand,L2 Ecosystem Fund,27
+L2 Ecosystem Fund 28,QF,860235.3734,1m * rand,L2 Ecosystem Fund,28
+L2 Ecosystem Fund 28,Direct Grants,497858.39,1m * rand,L2 Ecosystem Fund,28
+L2 Ecosystem Fund 28,RPGF,25497.04146,1m * rand,L2 Ecosystem Fund,28
+L2 Ecosystem Fund 28,Conviction Voting,2221.301931,10k * rand,L2 Ecosystem Fund,28
+L2 Ecosystem Fund 28,Streaming QF,1242.842873,10k * rand,L2 Ecosystem Fund,28
+L2 Ecosystem Fund 28,Other Mechanisms,2830.251201,10k * rand,L2 Ecosystem Fund,28
+L2 Ecosystem Fund 29,QF,779448.813,1m * rand,L2 Ecosystem Fund,29
+L2 Ecosystem Fund 29,Direct Grants,640218.1763,1m * rand,L2 Ecosystem Fund,29
+L2 Ecosystem Fund 29,RPGF,72725.70218,1m * rand,L2 Ecosystem Fund,29
+L2 Ecosystem Fund 29,Conviction Voting,1218.068675,10k * rand,L2 Ecosystem Fund,29
+L2 Ecosystem Fund 29,Streaming QF,7617.168932,10k * rand,L2 Ecosystem Fund,29
+L2 Ecosystem Fund 29,Other Mechanisms,738.763196,10k * rand,L2 Ecosystem Fund,29
+L2 Ecosystem Fund 30,QF,181642.2387,1m * rand,L2 Ecosystem Fund,30
+L2 Ecosystem Fund 30,Direct Grants,634677.4076,1m * rand,L2 Ecosystem Fund,30
+L2 Ecosystem Fund 30,RPGF,209173.2304,1m * rand,L2 Ecosystem Fund,30
+L2 Ecosystem Fund 30,Conviction Voting,6773.756245,10k * rand,L2 Ecosystem Fund,30
+L2 Ecosystem Fund 30,Streaming QF,9362.821715,10k * rand,L2 Ecosystem Fund,30
+L2 Ecosystem Fund 30,Other Mechanisms,6634.679281,10k * rand,L2 Ecosystem Fund,30
+LST Ecosystem Fund 2,QF,742983.8423,1m * rand,LST Ecosystem Fund,2
+LST Ecosystem Fund 2,Direct Grants,762448.1885,1m * rand,LST Ecosystem Fund,2
+LST Ecosystem Fund 2,RPGF,891183.4591,1m * rand,LST Ecosystem Fund,2
+LST Ecosystem Fund 2,Conviction Voting,4395.121059,10k * rand,LST Ecosystem Fund,2
+LST Ecosystem Fund 2,Streaming QF,9127.746414,10k * rand,LST Ecosystem Fund,2
+LST Ecosystem Fund 2,Other Mechanisms,9375.382961,10k * rand,LST Ecosystem Fund,2
+LST Ecosystem Fund 3,QF,211969.1823,1m * rand,LST Ecosystem Fund,3
+LST Ecosystem Fund 3,Direct Grants,405894.5319,1m * rand,LST Ecosystem Fund,3
+LST Ecosystem Fund 3,RPGF,926036.0207,1m * rand,LST Ecosystem Fund,3
+LST Ecosystem Fund 3,Conviction Voting,9085.574235,10k * rand,LST Ecosystem Fund,3
+LST Ecosystem Fund 3,Streaming QF,1247.481311,10k * rand,LST Ecosystem Fund,3
+LST Ecosystem Fund 3,Other Mechanisms,8074.802208,10k * rand,LST Ecosystem Fund,3
+LST Ecosystem Fund 4,QF,514578.9667,1m * rand,LST Ecosystem Fund,4
+LST Ecosystem Fund 4,Direct Grants,522106.0161,1m * rand,LST Ecosystem Fund,4
+LST Ecosystem Fund 4,RPGF,539874.6691,1m * rand,LST Ecosystem Fund,4
+LST Ecosystem Fund 4,Conviction Voting,9485.36413,10k * rand,LST Ecosystem Fund,4
+LST Ecosystem Fund 4,Streaming QF,9338.009608,10k * rand,LST Ecosystem Fund,4
+LST Ecosystem Fund 4,Other Mechanisms,7463.832585,10k * rand,LST Ecosystem Fund,4
+LST Ecosystem Fund 5,QF,613892.4012,1m * rand,LST Ecosystem Fund,5
+LST Ecosystem Fund 5,Direct Grants,710139.8532,1m * rand,LST Ecosystem Fund,5
+LST Ecosystem Fund 5,RPGF,290714.7722,1m * rand,LST Ecosystem Fund,5
+LST Ecosystem Fund 5,Conviction Voting,8055.134285,10k * rand,LST Ecosystem Fund,5
+LST Ecosystem Fund 5,Streaming QF,1668.064717,10k * rand,LST Ecosystem Fund,5
+LST Ecosystem Fund 5,Other Mechanisms,5181.961216,10k * rand,LST Ecosystem Fund,5
+LST Ecosystem Fund 6,QF,753138.9944,1m * rand,LST Ecosystem Fund,6
+LST Ecosystem Fund 6,Direct Grants,609775.5285,1m * rand,LST Ecosystem Fund,6
+LST Ecosystem Fund 6,RPGF,681399.3897,1m * rand,LST Ecosystem Fund,6
+LST Ecosystem Fund 6,Conviction Voting,4577.804706,10k * rand,LST Ecosystem Fund,6
+LST Ecosystem Fund 6,Streaming QF,7051.44197,10k * rand,LST Ecosystem Fund,6
+LST Ecosystem Fund 6,Other Mechanisms,9572.304134,10k * rand,LST Ecosystem Fund,6
+LST Ecosystem Fund 7,QF,77125.98332,1m * rand,LST Ecosystem Fund,7
+LST Ecosystem Fund 7,Direct Grants,640641.7266,1m * rand,LST Ecosystem Fund,7
+LST Ecosystem Fund 7,RPGF,582794.1822,1m * rand,LST Ecosystem Fund,7
+LST Ecosystem Fund 7,Conviction Voting,7214.976733,10k * rand,LST Ecosystem Fund,7
+LST Ecosystem Fund 7,Streaming QF,5731.931541,10k * rand,LST Ecosystem Fund,7
+LST Ecosystem Fund 7,Other Mechanisms,2500.945486,10k * rand,LST Ecosystem Fund,7
+LST Ecosystem Fund 8,QF,949416.7528,1m * rand,LST Ecosystem Fund,8
+LST Ecosystem Fund 8,Direct Grants,385942.5089,1m * rand,LST Ecosystem Fund,8
+LST Ecosystem Fund 8,RPGF,733750.259,1m * rand,LST Ecosystem Fund,8
+LST Ecosystem Fund 8,Conviction Voting,9111.575399,10k * rand,LST Ecosystem Fund,8
+LST Ecosystem Fund 8,Streaming QF,3510.840436,10k * rand,LST Ecosystem Fund,8
+LST Ecosystem Fund 8,Other Mechanisms,8362.900207,10k * rand,LST Ecosystem Fund,8
+LST Ecosystem Fund 9,QF,222686.8064,1m * rand,LST Ecosystem Fund,9
+LST Ecosystem Fund 9,Direct Grants,163677.6035,1m * rand,LST Ecosystem Fund,9
+LST Ecosystem Fund 9,RPGF,630677.6719,1m * rand,LST Ecosystem Fund,9
+LST Ecosystem Fund 9,Conviction Voting,2816.928875,10k * rand,LST Ecosystem Fund,9
+LST Ecosystem Fund 9,Streaming QF,8863.537574,10k * rand,LST Ecosystem Fund,9
+LST Ecosystem Fund 9,Other Mechanisms,8523.140934,10k * rand,LST Ecosystem Fund,9
+LST Ecosystem Fund 10,QF,672859.25,1m * rand,LST Ecosystem Fund,10
+LST Ecosystem Fund 10,Direct Grants,538535.6023,1m * rand,LST Ecosystem Fund,10
+LST Ecosystem Fund 10,RPGF,529595.7214,1m * rand,LST Ecosystem Fund,10
+LST Ecosystem Fund 10,Conviction Voting,1896.384158,10k * rand,LST Ecosystem Fund,10
+LST Ecosystem Fund 10,Streaming QF,24.61935449,10k * rand,LST Ecosystem Fund,10
+LST Ecosystem Fund 10,Other Mechanisms,6817.66875,10k * rand,LST Ecosystem Fund,10
+DeFi Ecosystem Fund 2,QF,153801.0705,1m * rand,DeFi Ecosystem Fund,2
+DeFi Ecosystem Fund 2,Direct Grants,97238.60405,1m * rand,DeFi Ecosystem Fund,2
+DeFi Ecosystem Fund 2,RPGF,265264.6342,1m * rand,DeFi Ecosystem Fund,2
+DeFi Ecosystem Fund 2,Conviction Voting,2453.088805,10k * rand,DeFi Ecosystem Fund,2
+DeFi Ecosystem Fund 2,Streaming QF,4852.476549,10k * rand,DeFi Ecosystem Fund,2
+DeFi Ecosystem Fund 2,Other Mechanisms,1846.000531,10k * rand,DeFi Ecosystem Fund,2
+DeFi Ecosystem Fund 3,QF,382804.9527,1m * rand,DeFi Ecosystem Fund,3
+DeFi Ecosystem Fund 3,Direct Grants,736100.5247,1m * rand,DeFi Ecosystem Fund,3
+DeFi Ecosystem Fund 3,RPGF,337842.0167,1m * rand,DeFi Ecosystem Fund,3
+DeFi Ecosystem Fund 3,Conviction Voting,3866.671792,10k * rand,DeFi Ecosystem Fund,3
+DeFi Ecosystem Fund 3,Streaming QF,918.327289,10k * rand,DeFi Ecosystem Fund,3
+DeFi Ecosystem Fund 3,Other Mechanisms,2155.893188,10k * rand,DeFi Ecosystem Fund,3
+DeFi Ecosystem Fund 4,QF,726420.3718,1m * rand,DeFi Ecosystem Fund,4
+DeFi Ecosystem Fund 4,Direct Grants,848373.5164,1m * rand,DeFi Ecosystem Fund,4
+DeFi Ecosystem Fund 4,RPGF,654201.6991,1m * rand,DeFi Ecosystem Fund,4
+DeFi Ecosystem Fund 4,Conviction Voting,979.9431793,10k * rand,DeFi Ecosystem Fund,4
+DeFi Ecosystem Fund 4,Streaming QF,6750.998324,10k * rand,DeFi Ecosystem Fund,4
+DeFi Ecosystem Fund 4,Other Mechanisms,1180.599753,10k * rand,DeFi Ecosystem Fund,4
+DeFi Ecosystem Fund 5,QF,754441.0193,1m * rand,DeFi Ecosystem Fund,5
+DeFi Ecosystem Fund 5,Direct Grants,116420.5842,1m * rand,DeFi Ecosystem Fund,5
+DeFi Ecosystem Fund 5,RPGF,349738.5969,1m * rand,DeFi Ecosystem Fund,5
+DeFi Ecosystem Fund 5,Conviction Voting,915.847899,10k * rand,DeFi Ecosystem Fund,5
+DeFi Ecosystem Fund 5,Streaming QF,9899.450542,10k * rand,DeFi Ecosystem Fund,5
+DeFi Ecosystem Fund 5,Other Mechanisms,6159.132118,10k * rand,DeFi Ecosystem Fund,5
+DeFi Ecosystem Fund 6,QF,484384.4848,1m * rand,DeFi Ecosystem Fund,6
+DeFi Ecosystem Fund 6,Direct Grants,435060.5408,1m * rand,DeFi Ecosystem Fund,6
+DeFi Ecosystem Fund 6,RPGF,902664.2009,1m * rand,DeFi Ecosystem Fund,6
+DeFi Ecosystem Fund 6,Conviction Voting,9467.968147,10k * rand,DeFi Ecosystem Fund,6
+DeFi Ecosystem Fund 6,Streaming QF,686.6114958,10k * rand,DeFi Ecosystem Fund,6
+DeFi Ecosystem Fund 6,Other Mechanisms,4065.369457,10k * rand,DeFi Ecosystem Fund,6
+DeFi Ecosystem Fund 7,QF,201374.872,1m * rand,DeFi Ecosystem Fund,7
+DeFi Ecosystem Fund 7,Direct Grants,752154.4557,1m * rand,DeFi Ecosystem Fund,7
+DeFi Ecosystem Fund 7,RPGF,916361.6582,1m * rand,DeFi Ecosystem Fund,7
+DeFi Ecosystem Fund 7,Conviction Voting,955.809202,10k * rand,DeFi Ecosystem Fund,7
+DeFi Ecosystem Fund 7,Streaming QF,6800.52875,10k * rand,DeFi Ecosystem Fund,7
+DeFi Ecosystem Fund 7,Other Mechanisms,3700.572698,10k * rand,DeFi Ecosystem Fund,7
+DeFi Ecosystem Fund 8,QF,45089.75356,1m * rand,DeFi Ecosystem Fund,8
+DeFi Ecosystem Fund 8,Direct Grants,104588.1514,1m * rand,DeFi Ecosystem Fund,8
+DeFi Ecosystem Fund 8,RPGF,350568.7686,1m * rand,DeFi Ecosystem Fund,8
+DeFi Ecosystem Fund 8,Conviction Voting,4041.643761,10k * rand,DeFi Ecosystem Fund,8
+DeFi Ecosystem Fund 8,Streaming QF,7626.090077,10k * rand,DeFi Ecosystem Fund,8
+DeFi Ecosystem Fund 8,Other Mechanisms,6067.931034,10k * rand,DeFi Ecosystem Fund,8
+DeFi Ecosystem Fund 9,QF,476869.5197,1m * rand,DeFi Ecosystem Fund,9
+DeFi Ecosystem Fund 9,Direct Grants,755570.431,1m * rand,DeFi Ecosystem Fund,9
+DeFi Ecosystem Fund 9,RPGF,977630.6594,1m * rand,DeFi Ecosystem Fund,9
+DeFi Ecosystem Fund 9,Conviction Voting,5333.272689,10k * rand,DeFi Ecosystem Fund,9
+DeFi Ecosystem Fund 9,Streaming QF,5230.063634,10k * rand,DeFi Ecosystem Fund,9
+DeFi Ecosystem Fund 9,Other Mechanisms,542.8522871,10k * rand,DeFi Ecosystem Fund,9
+DeFi Ecosystem Fund 10,QF,531091.032,1m * rand,DeFi Ecosystem Fund,10
+DeFi Ecosystem Fund 10,Direct Grants,365308.7458,1m * rand,DeFi Ecosystem Fund,10
+DeFi Ecosystem Fund 10,RPGF,508813.413,1m * rand,DeFi Ecosystem Fund,10
+DeFi Ecosystem Fund 10,Conviction Voting,4804.890275,10k * rand,DeFi Ecosystem Fund,10
+DeFi Ecosystem Fund 10,Streaming QF,2785.402353,10k * rand,DeFi Ecosystem Fund,10
+DeFi Ecosystem Fund 10,Other Mechanisms,6368.278857,10k * rand,DeFi Ecosystem Fund,10
